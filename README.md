@@ -28,7 +28,7 @@ For example:
 ---
 
 ## Setting Up + Running Locally
-1. fork the repo [https://github.com/marcusjhang/fintech-summit]
+1. fork the repo [https://github.com/NUS-Fintech-Society/SD_Fintech_Summit]
 2. git clone (URL)
 3. npm install
 4. npm run dev
