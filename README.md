@@ -30,9 +30,8 @@ For example:
 ## Setting Up + Running Locally
 1. fork the repo [https://github.com/marcusjhang/fintech-summit]
 2. git clone (URL)
-3. cd fintech-summit/nextjs-frontend
-4. npm install
-5. npm run dev
+3. npm install
+4. npm run dev
 
 ## Github Workflow
 1. git add *
