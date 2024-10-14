@@ -5,18 +5,24 @@ import AboutButton from '@/components/about/AboutButton';
 const AboutPage: React.FC = () => {
   return (
     <div className="bg-blue-900 min-h-screen">
-      <div className="container mx-auto p-8">
-        <h1 className="text-3xl font-bold text-center text-white mb-8">ABOUT US</h1>
+    <div className="container mx-auto p-8">
 
-        <AboutSection title="FINTECH SUMMIT" content="Information about the summit goes here." />
+      <h1 className="text-3xl font-bold text-center text-header-color mb-8">FINTECH SUMMIT </h1>
+      <AboutSection title="FINTECH SUMMIT" imageURL = "/Summit Logo.svg"  
+      content="To Educate students with <strong>Fintech knowledge</strong> through events
+      and industry projects, and connect and establish relationship
+      with industry leaders." />
 
-        <AboutSection title="FINTECH SOCIETY">
-          <div className="flex justify-center items-center">
-            {/* Replace with an actual image if available */}
-          </div>
-          <div className="flex justify-center">
-            <AboutButton />
-          </div>
+    <div className="mb-8" />
+    
+    <h1 className="text-3xl font-bold text-center text-header-color mb-8">FINTECH SOCIETY</h1>
+      <AboutSection title="FINTECH SOCIETY" imageURL = "/Fintech Logo.svg" 
+      content="NUS FinTech Society was founded in 2018 in collaboration
+      with NUS Fintech Lab under NUS School of Computing. </br></br>We identify ourselvers
+      as Fintech enthusiasts looking for opportunities to learn and grow our knowledge,
+      skills and network in the Fintech Space.  </br></br>In 2024, NUS Fintech Society has amassed
+      over 200 members, making it one of NUS' largest student-run organisation.">
+        <AboutButton />
         </AboutSection>
       </div>
     </div>
