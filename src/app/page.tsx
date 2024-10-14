@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className="bg-blue-900 min-h-screen">
       <div className="container mx-auto p-8">
         <Header />
-        <Countdown />
+        {/* <Countdown /> */}
         <ProblemStatement />
         <Timeline />
       </div>
