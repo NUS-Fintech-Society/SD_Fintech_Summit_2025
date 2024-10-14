@@ -1,54 +1,96 @@
 "use client";
-import React, { useEffect, useState } from 'react';
+
+import React, { useState, useEffect } from "react";
 
 const Countdown: React.FC = () => {
-  // Target Date
-  const targetDate = new Date('2025-01-06T00:00:00+08:00').getTime();
+  const calculateTimeLeft = () => {
+    const summitDate = new Date("2025-01-01T00:00:00");
+    const currentTime = new Date();
+    const difference = summitDate.getTime() - currentTime.getTime();
 
-  // Styling for Font
-  const innerShadowStyle = {
-    textShadow: '0 -4px -4px rgba(0, 0, 0, 0.25)', // Inner shadow effect
+    let timeLeft = {
+      days: 0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
+    };
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+      };
+    }
+
+    return timeLeft;
   };
 
-  // State to hold the time left
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-    seconds: 0,
-  });
+  const [timeLeft, setTimeLeft] = useState(() => calculateTimeLeft());
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
-    // Update the countdown every second
-    const interval = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      // Calculate time left
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      setTimeLeft({ days, hours, minutes, seconds });
-
-      if (distance < 0) {
-        clearInterval(interval);
-        setTimeLeft({ days: 0, hours: 0, minutes: 0, seconds: 0 }); // Optional: Set to zero when finished
-      }
+    setIsMounted(true);
+    const timer = setInterval(() => {
+      setTimeLeft(calculateTimeLeft());
     }, 1000);
 
-    return () => clearInterval(interval);
-  }, [targetDate]);
+    return () => clearInterval(timer);
+  }, []);
+
+  if (!isMounted) return null;
 
   return (
-    <div className="flex justify-center space-x-4 text-white mb-8">
-      {['days', 'hours', 'minutes', 'seconds'].map((label, index) => (
-        <div key={index} className="flex justify-center items-center text-center">
-          <div className="text-4xl font-bold" style={innerShadowStyle} >{timeLeft[label as keyof typeof timeLeft]}</div>
-          <p className="text-lg mb-3 font-thin">{label}</p>
+    <div className="flex justify-center text-white mb-4">
+      <div className="mx-2 text-center">
+        <div
+          className="text-[80px] font-semibold leading-[80px]"
+          style={{
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+          }}
+        >
+          {timeLeft.days}
         </div>
-      ))}
+        <span className="block text-sm">days</span>
+      </div>
+      <div className="mx-2 text-center">
+        <div
+          className="text-[80px] font-semibold leading-[80px]"
+          style={{
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+          }}
+        >
+          {timeLeft.hours}
+        </div>
+        <span className="block text-sm">hrs</span>
+      </div>
+      <div className="mx-2 text-center">
+        <div
+          className="text-[80px] font-semibold leading-[80px]"
+          style={{
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+          }}
+        >
+          {timeLeft.minutes}
+        </div>
+        <span className="block text-sm">mins</span>
+      </div>
+      <div className="mx-2 text-center">
+        <div
+          className="text-[80px] font-semibold leading-[80px]"
+          style={{
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+          }}
+        >
+          {timeLeft.seconds}
+        </div>
+        <span className="block text-sm">secs</span>
+      </div>
     </div>
   );
 };
