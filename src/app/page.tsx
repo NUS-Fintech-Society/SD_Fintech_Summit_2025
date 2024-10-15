@@ -8,7 +8,7 @@ import Timeline from "@/components/home/Timeline";
 
 const HomePage = () => {
   return (
-    <div className="bg-blue-900 min-h-screen">
+    <div className="bg-custom-background min-h-screen">
       <div className="container mx-auto p-8">
         <Header />
         {/* <Countdown /> */}

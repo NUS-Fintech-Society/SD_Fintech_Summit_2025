@@ -4,7 +4,7 @@ import AboutButton from '@/components/about/AboutButton';
 
 const AboutPage: React.FC = () => {
   return (
-    <div className="bg-blue-900 min-h-screen">
+    <div className="bg-custom-background min-h-screen">
     <div className="container mx-auto p-8">
 
       <h1 className="text-3xl font-bold text-center text-header-color mb-8">FINTECH SUMMIT </h1>

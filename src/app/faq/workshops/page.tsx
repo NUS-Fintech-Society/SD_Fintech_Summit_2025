@@ -9,7 +9,7 @@ const faqs = [
 
 const workshopsFAQ: React.FC = () => {
   return (
-    <div className="bg-blue-900 min-h-screen">
+    <div className="bg-custom-background min-h-screen">
       <div className="container mx-auto p-8">
         <h1 className="text-3xl font-bold text-center text-white mb-8">Workshops FAQ</h1>
         <FAQList faqs={faqs} />
