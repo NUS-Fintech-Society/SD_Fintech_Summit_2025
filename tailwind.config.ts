@@ -11,8 +11,9 @@ const config: Config = {
     extend: {
       colors: {
       'header-color': '#d9dfa0', //Pale yellow meant for all the header texts
-      'nav-backround': '#4470ba', //Background for navbar
+      'nav-backround': '#4470BA', //Background for navbar
       'about-button' : '#669fe4', //Color for the button
+      'custom-background': '#102A71', //Background for the whole page
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

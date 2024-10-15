@@ -7,7 +7,7 @@ const Sponsors = () => {
     const silverSponsors = ["Sponsor 1", "Sponsor 2", "Sponsor 3", "Sponsor 4", "Sponsor 5"];
 
     return (
-        <div className="p-8 bg-blue-50 min-h-screen">
+        <div className="p-8 bg-custom-background min-h-screen">
             <h1 className="text-3xl font-bold text-center text-blue-700 mb-8">Our Sponsors</h1>
             <div className="grid gap-8 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1">
                 <SponsorSection title="Platinum" sponsors={platinumSponsors} />

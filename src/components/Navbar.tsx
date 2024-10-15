@@ -20,13 +20,17 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-nav-backround shadow-md w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex-1 flex justify-between items-center">
-              <Link href="/" className="text-white font-bold text-lg hover:text-gray-200 md:ml-[10%]">
+        <div className="w-full px-4 sm:px-6 lg:px-8"> {/* Full width applied here */}
+          <div className="flex items-center justify-between h-16 w-full"> {/* Also here */}
+            <div className="flex-1 flex justify-between items-center w-full"> {/* Ensure full width */}
+              <Link href="/" className="text-white font-bold text-lg hover:text-gray-200 md:ml-[10%]"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
+              >
                 HOME
               </Link>
-              <Link href="/about" className="text-white font-bold text-lg hover:text-gray-200 mx-2">
+              <Link href="/about" className="text-white font-bold text-lg hover:text-gray-200 mx-2"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
+              >
                 ABOUT
               </Link>
 
@@ -36,7 +40,9 @@ const Navbar = () => {
                 onMouseEnter={() => handleMouseEnter("workshops")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="text-white font-bold text-lg flex items-center hover:text-gray-200">
+                <button className="text-white font-bold text-lg flex items-center hover:text-gray-200"
+                  style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
+                >
                   WORKSHOPS
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -60,18 +66,21 @@ const Navbar = () => {
                     <Link
                       href="/workshops/day1"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
                     >
-                      Day 1
+                      DAY 1
                     </Link>
                     <Link
                       href="/workshops/day2"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
                     >
                       Day 2
                     </Link>
                     <Link
                       href="/workshops/day3"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}  
                     >
                       Day 3
                     </Link>
@@ -79,7 +88,9 @@ const Navbar = () => {
                 )}
               </div>
 
-              <Link href="/sponsors" className="text-white font-bold text-lg hover:text-gray-200 mx-2">
+              <Link href="/sponsors" className="text-white font-bold text-lg hover:text-gray-200 mx-2"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
+              >
                 SPONSORS
               </Link>
 
@@ -89,7 +100,9 @@ const Navbar = () => {
                 onMouseEnter={() => handleMouseEnter("faq")}
                 onMouseLeave={handleMouseLeave}
               >
-                <button className="text-white font-bold text-lg flex items-center hover:text-gray-200">
+                <button className="text-white font-bold text-lg flex items-center hover:text-gray-200"
+                  style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
+                >
                   FAQ
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -113,32 +126,38 @@ const Navbar = () => {
                     <Link
                       href="/faq/hackathon"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
                     >
-                      Hackathon
+                      HACKATHON
                     </Link>
                     <Link
                       href="/faq/workshops"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
                     >
-                      Workshops
+                      WORKSHOPS
                     </Link>
                     <Link
                       href="/faq/opening-ceremony"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
                     >
-                      Opening Ceremony
+                      OPENING CEREMONY
                     </Link>
                     <Link
                       href="/faq/demo-day"
                       className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
+                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
                     >
-                      Demo Day
+                      DEMO DAY
                     </Link>
                   </div>
                 )}
               </div>
 
-              <Link href="/registration" className="text-white font-bold text-lg hover:text-gray-200 md:mr-[10%]">
+              <Link href="/registration" className="text-white font-bold text-lg hover:text-gray-200 md:mr-[10%]"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }} 
+              >
                 REGISTRATION
               </Link>
             </div>
