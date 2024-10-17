@@ -1,39 +1,40 @@
-<div align="center">
-  <img src="public/Fintech%20Logo.svg" alt="Careers Platform Logo">
-</div>
-The NUS Fintech Society's Careers Platform is designed to eliminate barriers for aspiring applicants, enabling the society to attract a diverse and talented pool of candidates. By creating a seamless and user-friendly recruitment experience, this innovative platform enhances engagement and optimizes management efficiency. With streamlined applications and improved tracking capabilities, the NUS Fintech Society is set to elevate its recruitment efforts and foster a dynamic community of talent and ambition.
+# Fintech Summit - Next.js Frontend
 
-## Contribution guidelines
+## Overview
 
-This project is developed using **Next.js**, with automatic routing based on the file structure within the `src/app/` directory. Each folder corresponds to a URL path, and every `page.tsx` file within those folders defines the content for that specific route.
+This project is built using **Next.js**, and it automatically maps the files within the `src/app/` directory to routes in the application. Each directory within `app/` corresponds to a URL path, and each `page.tsx` file within those directories serves as the content for that route.
 
 For example:
-- The `page.tsx` file in `/src/app/about/` will render when you navigate to `/about` in the browser.
+- The `page.tsx` file located in `/src/app/about/` would load when you visit `/about` in the browser.
 
 ---
 
-### Key Routing Folders
+## Key Routing Folders
 
-- `src/app/positions/page.tsx` → `/positions`
+- `src/app/faq/page.tsx` → `/faq`
+- `src/app/demo-day/page.tsx` → `/demo-day`
+- `src/app/hackathon/page.tsx` → `/hackathon`
+- `src/app/opening-ceremony/page.tsx` → `/opening-ceremony`
+- `src/app/workshops/page.tsx` → `/workshops`
+- `src/app/workshops/day1/page.tsx` → `/workshops/day1`
+- `src/app/workshops/day2/page.tsx` → `/workshops/day2`
+- `src/app/workshops/day3/page.tsx` → `/workshops/day3`
+- `src/app/registration/page.tsx` → `/registration`
+- `src/app/sponsors/page.tsx` → `/sponsors`
 
-#### Components
-
-- Page-specific components are housed in the `src/app/components/(page)` directory.
+### Components
+- Components for each page are located within the `src/app/components/(page)` directory.
 
 ---
 
-### Local Setup and Execution
+## Setting Up + Running Locally
+1. fork the repo [https://github.com/NUS-Fintech-Society/SD_Fintech_Summit]
+2. git clone (URL)
+3. npm install
+4. npm run dev
 
-1. Fork the repository: [NUS Fintech Society Careers Platform](https://github.com/NUS-Fintech-Society/SD_Careers_Platform)
-2. Clone the repository: `git clone (URL)`
-3. Install dependencies: `npm install`
-4. Run the development server: `npm run dev`
-
----
-
-### GitHub Workflow
-
-1. Stage changes: `git add *`
-2. Commit with a message: `git commit -m "(message)"`
-3. Push to the repository: `git push`
-4. Submit a pull request
+## Github Workflow
+1. git add *
+2. git commit -m "(message)"
+3. git push
+4. make a pull request
