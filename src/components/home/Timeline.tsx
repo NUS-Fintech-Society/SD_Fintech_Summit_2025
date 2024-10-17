@@ -70,7 +70,7 @@ const Timeline = () => {
         >
           <div className="absolute pl-44 pt-7 z-28">
             <svg
-              className="w-10 h-10 group-hover:w-12 group-hover:h-12 transition-transform duration-300"
+              className="w-10 h-10 group-hover:w-8 group-hover:h-8 transition-transform duration-300"
               viewBox="0 0 24 24"
               fill="white"
               xmlns="http://www.w3.org/2000/svg"
