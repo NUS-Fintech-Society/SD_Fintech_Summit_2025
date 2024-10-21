@@ -11,7 +11,10 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   imageAlt = "Workshop Image",
 }) => {
   return (
-    <div className="flex items-center bg-white rounded-lg shadow-[13px_13px_0px_1px_rgba(0,_0,_0)] relative overflow-hidden mb-10 max-w-[90%] lg:max-w-[70%] mx-auto">
+    <div
+      style={{ borderRadius: 50 }}
+      className="flex items-center bg-white shadow-[10px_8px_0px_0px_rgba(0,_0,_0)] relative overflow-hidden mb-10 max-w-[90%] lg:max-w-[70%] mx-auto"
+    >
       {/* Left-side image */}
       <div className="w-40 rounded-lg overflow-hidden">
         <img

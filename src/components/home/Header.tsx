@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       {/* Adjust the image container */}
       <div className="flex-shrink-0 w-full lg:w-[45%] mb-6 lg:mb-0">
         <Image
-          src="/HomeLogo.png"
+          src="/HomeLogoFull.png"
           alt="Fintech Summit Logo"
           width={600} // Adjust image width for larger screens
           height={600} // Adjust image height for larger screens
