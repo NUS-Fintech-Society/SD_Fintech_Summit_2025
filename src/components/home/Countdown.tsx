@@ -41,58 +41,6 @@ const Countdown: React.FC = () => {
 
   if (!isMounted) return null;
 
-  // return (
-  //   <div className="flex justify-center text-white mb-4">
-  //     <div className="mx-2 text-center">
-  //       <div
-  //         className="text-[80px] font-semibold leading-[80px]"
-  //         style={{
-  //           textShadow:
-  //             "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
-  //         }}
-  //       >
-  //         {timeLeft.days}
-  //       </div>
-  //       <span className="block text-sm">days</span>
-  //     </div>
-  //     <div className="mx-2 text-center">
-  //       <div
-  //         className="text-[80px] font-semibold leading-[80px]"
-  //         style={{
-  //           textShadow:
-  //             "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
-  //         }}
-  //       >
-  //         {timeLeft.hours}
-  //       </div>
-  //       <span className="block text-sm">hrs</span>
-  //     </div>
-  //     <div className="mx-2 text-center">
-  //       <div
-  //         className="text-[80px] font-semibold leading-[80px]"
-  //         style={{
-  //           textShadow:
-  //             "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
-  //         }}
-  //       >
-  //         {timeLeft.minutes}
-  //       </div>
-  //       <span className="block text-sm">mins</span>
-  //     </div>
-  //     <div className="mx-2 text-center">
-  //       <div
-  //         className="text-[80px] font-semibold leading-[80px]"
-  //         style={{
-  //           textShadow:
-  //             "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
-  //         }}
-  //       >
-  //         {timeLeft.seconds}
-  //       </div>
-  //       <span className="block text-sm">secs</span>
-  //     </div>
-  //   </div>
-  // );
   return (
     <div className="flex justify-center text-white mb-4">
       {/* Days */}
