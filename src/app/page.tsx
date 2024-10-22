@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "@/components/Navbar";
-import "./globals.css";
 import Header from "@/components/home/Header";
 import Countdown from "@/components/home/Countdown";
 import ProblemStatement from "@/components/home/ProblemStatement";
