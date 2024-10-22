@@ -7,7 +7,7 @@ const ProblemStatement = () => {
         <span className="text-2xl font-semibold leading-none">PROBLEM</span>
         <span className="text-xl font-semibold leading-none">STATEMENT</span>
       </div>
-      <div className="bg-[#D9D9D9] w-5/12 h-28 rounded-md"></div>
+      <div className="bg-[#D9D9D9] w-7/12 h-28 rounded-md"></div>
     </div>
   );
 };
