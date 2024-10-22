@@ -17,10 +17,10 @@ const AboutPage: React.FC = () => {
     
     <h1 className="text-3xl font-bold text-center text-header-color mb-8">FINTECH SOCIETY</h1>
       <AboutSection title="FINTECH SOCIETY" imageURL = "/Fintech Logo.svg" 
-      content="NUS FinTech Society was founded in 2018 in collaboration
+      content="<strong>NUS FinTech Society</strong> was founded in 2018 in collaboration
       with NUS Fintech Lab under NUS School of Computing. </br></br>We identify ourselvers
       as Fintech enthusiasts looking for opportunities to learn and grow our knowledge,
-      skills and network in the Fintech Space.  </br></br>In 2024, NUS Fintech Society has amassed
+      skills and network in the Fintech Space.  </br></br>In 2024, <strong>NUS Fintech Society</strong> has amassed
       over 200 members, making it one of NUS' largest student-run organisation.">
         <AboutButton />
         </AboutSection>
