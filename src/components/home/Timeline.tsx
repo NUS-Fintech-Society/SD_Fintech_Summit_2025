@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 type TimelineItemType = {
   title: string;
@@ -11,45 +11,51 @@ type TimelineItemType = {
 
 const timelineItems: TimelineItemType[] = [
   {
-    title: 'Registration',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    date: '01 JAN',
-    link: '/',
+    title: "Registration",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "01 JAN",
+    link: "/",
   },
   {
-    title: 'Workshop',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    date: '02 JAN',
-    link: '/',
+    title: "Workshop",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "02 JAN",
+    link: "/",
   },
   {
-    title: 'Workshop',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    date: '03 JAN',
-    link: '/',
+    title: "Workshop",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "03 JAN",
+    link: "/",
   },
   {
-    title: 'Workshop',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    date: '03 JAN',
-    link: '/',
+    title: "Workshop",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "03 JAN",
+    link: "/",
   },
   {
-    title: 'Workshop',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    date: '03 JAN',
-    link: '/',
+    title: "Workshop",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "03 JAN",
+    link: "/",
   },
   {
-    title: 'Hackathon',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    date: '04 JAN',
-    link: '/',
+    title: "Hackathon",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    date: "04 JAN",
+    link: "/",
   },
 ];
 
 const Timeline = () => {
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleTimeline = () => {
     setIsVisible(!isVisible);
@@ -57,12 +63,30 @@ const Timeline = () => {
 
   return (
     <div className="my-8">
-      <button
-        onClick={toggleTimeline}
-        className="bg-[#D9D9D9] text-[#102B71] py-2 px-16 rounded-full font-semibold hover:bg-[#F5A202] transition duration-300 mx-auto block text-4xl mb-12 shadow-[0_4px_14px_rgba(0,0,0,0.6)] hover:shadow-[0_6px_18px_rgba(0,0,0,0.8)]"
-      >
-        TIMELINE
-      </button>
+      <div className="relative flex items-center justify-center">
+        <button
+          onClick={toggleTimeline}
+          className="group bg-[#D9D9D9] text-[#102B71] py-2 px-16 rounded-full font-semibold hover:bg-[#F5A202] transition duration-300 mx-auto block text-4xl mb-12 shadow-[0_4px_14px_rgba(0,0,0,0.6)] hover:shadow-[0_6px_18px_rgba(0,0,0,0.8)]"
+        >
+          <div className="absolute pl-44 pt-7 z-28">
+            <svg
+              className="w-10 h-10 group-hover:w-8 group-hover:h-8 transition-transform duration-300"
+              viewBox="0 0 24 24"
+              fill="white"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4.71152 3.67446C4.17096 3.46151 3.90067 3.35504 3.72846 3.41232C3.57892 3.46207 3.46158 3.5794 3.41184 3.72894C3.35455 3.90116 3.46102 4.17144 3.67397 4.71201L8.97461 18.1675C9.14612 18.6028 9.23188 18.8205 9.37164 18.9079C9.49348 18.9841 9.64219 19.0041 9.77986 18.963C9.93778 18.9158 10.0782 18.7286 10.3589 18.3542L12.4996 15.5001L15.9489 20.2429C16.1385 20.5036 16.2334 20.634 16.3542 20.6885C16.4602 20.7363 16.5796 20.7457 16.6918 20.715C16.8196 20.68 16.9336 20.566 17.1616 20.338L20.3376 17.1621C20.5655 16.9341 20.6795 16.8201 20.7145 16.6923C20.7452 16.5801 20.7359 16.4607 20.688 16.3547C20.6335 16.2338 20.5032 16.139 20.2424 15.9494L15.4996 12.5001L18.3538 10.3594C18.7281 10.0787 18.9153 9.93827 18.9625 9.78035C19.0036 9.64268 18.9836 9.49397 18.9074 9.37213C18.82 9.23237 18.6024 9.14661 18.167 8.97509L4.71152 3.67446Z"
+                stroke="black"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          TIMELINE
+        </button>
+      </div>
 
       {isVisible && (
         <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
@@ -73,18 +97,28 @@ const Timeline = () => {
             >
               <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#D9D9D9] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_4px_14px_rgba(0,0,0,0.6)]"></div>
 
-              <div className={`relative w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] bg-[#D9D9D9] p-6 rounded-lg border border-[#D9D9D9] shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
-                ${index % 2 === 0 ? 'ml-8' : 'md:mr-8'} 
+              <div
+                className={`relative w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] bg-[#D9D9D9] p-6 rounded-lg border border-[#D9D9D9] shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
+                ${index % 2 === 0 ? "ml-8" : "md:mr-8"} 
                 before:absolute before:content-[''] before:w-0 before:h-0 before:border-[32px] before:border-transparent 
-                ${index % 2 === 0 
-                  ? 'before:right-full before:border-r-[#D9D9D9]' 
-                  : 'before:right-full before:border-r-[#D9D9D9] md:before:left-full md:before:border-l-[#D9D9D9] md:before:border-r-0 md:before:right-0'}  
-                before:top-1/2 before:-translate-y-1/2`}>
-
-                <div className="text-3xl font-bold text-[#102B71] mb-2">{item.date}</div>
-                <div className="font-bold text-slate-900 mb-2">{item.title}</div>
+                ${
+                  index % 2 === 0
+                    ? "before:right-full before:border-r-[#D9D9D9]"
+                    : "before:right-full before:border-r-[#D9D9D9] md:before:left-full md:before:border-l-[#D9D9D9] md:before:border-r-0 md:before:right-0"
+                }  
+                before:top-1/2 before:-translate-y-1/2`}
+              >
+                <div className="text-3xl font-bold text-[#102B71] mb-2">
+                  {item.date}
+                </div>
+                <div className="font-bold text-slate-900 mb-2">
+                  {item.title}
+                </div>
                 <div className="text-slate-500 mb-4">{item.description}</div>
-                <a href={item.link} className="bg-[#F5A202] text-[#102B71] py-2 px-4 rounded-full font-medium">
+                <a
+                  href={item.link}
+                  className="bg-[#F5A202] text-[#102B71] py-2 px-4 rounded-full font-medium"
+                >
                   More
                 </a>
               </div>
