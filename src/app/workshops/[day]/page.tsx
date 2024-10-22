@@ -2,13 +2,14 @@ import { workshopsMockData } from "@/components/workshops/data";
 import RegisterButton from "@/components/workshops/RegisterButton";
 import { IWorkShop } from "@/components/workshops/types";
 import WorkshopList from "@/components/workshops/WorkshopList";
+import "./workshops.css";
 
 export default async function Page({ params }: { params: { day: string } }) {
   const day = params.day;
   const workshops = await getWorkshopsAsync(day);
 
   return (
-    <div className="bg-custom-background min-h-screen p-8">
+    <div className="backgroundImage bg-custom-background min-h-screen p-8">
       <h1 className="text-2xl text-center text-white font-bold mb-8">
         <div className="[text-shadow:_4px_3px_0px_#000000] text-5xl">
           WORKSHOPS
