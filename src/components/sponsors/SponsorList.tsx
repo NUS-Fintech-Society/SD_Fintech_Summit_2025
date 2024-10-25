@@ -1,8 +1,10 @@
 import React from 'react';
 
-//TODO: copy prop handling same as faq 
+interface SponsorListProps {
+    sponsors: string[];  // Explicitly typing 'sponsors' as an array of strings
+}
 
-const SponsorList = ({ sponsors }) => {
+const SponsorList: React.FC<SponsorListProps> = ({ sponsors }) => {
     return (
         <div className="space-y-2">
             {sponsors.map((sponsor, index) => (
