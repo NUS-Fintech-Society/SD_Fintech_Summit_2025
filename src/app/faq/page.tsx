@@ -46,20 +46,21 @@ export default function Page() {
         >
           Hackathon
         </h2>
-        <FaqAccordion items={mockData.workshops} />
+        <FaqAccordion items={mockData.hackathon} />
         <h2
           className="text-7xl mb-8 mt-8 font-bold"
           style={{ color: "#6c93d6" }}
         >
           Workshops
         </h2>
-        <FaqAccordion items={mockData.demo} />
+        <FaqAccordion items={mockData.workshops} />
         <h2
-          className="text-7xl mb-8  mt-8font-bold"
+          className="text-7xl mb-8  mt-8 font-bold"
           style={{ color: "#6c93d6" }}
         >
           Demo day
         </h2>
+        <FaqAccordion items={mockData.demo} />
       </div>
     </>
   );
