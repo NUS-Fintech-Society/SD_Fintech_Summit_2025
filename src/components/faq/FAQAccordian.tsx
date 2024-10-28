@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import { FaPlus, FaMinus, FaMinusCircle, FaPlusCircle } from "react-icons/fa";
 import { FAQItemProps } from "./FAQItem";
 
 export const FaqAccordion = ({ items }: { items: FAQItemProps[] }) => {
@@ -13,7 +13,11 @@ export const FaqAccordion = ({ items }: { items: FAQItemProps[] }) => {
   return (
     <div className="space-y-2">
       {items.map((item, index) => (
-        <div key={index} className="bg-gray-100 rounded-lg p-4 shadow-sm">
+        <div
+          key={index}
+          style={{ backgroundColor: "#dee6f2" }}
+          className="rounded-lg p-8 shadow-sm"
+        >
           <div
             className="flex items-center justify-between cursor-pointer"
             onClick={() => handleClick(index)}
@@ -22,10 +26,16 @@ export const FaqAccordion = ({ items }: { items: FAQItemProps[] }) => {
               <span className="text-gray-400 font-bold text-lg">
                 {String(index + 1).padStart(2, "0")}
               </span>
-              <h3 className="text-black font-semibold">{item.question}</h3>
+              <h3 className="text-black text-lg font-semibold">
+                {item.question}
+              </h3>
             </div>
             <span className="text-gray-500">
-              {activeIndex === index ? <FaMinus /> : <FaPlus />}
+              {activeIndex === index ? (
+                <FaMinusCircle size={24} />
+              ) : (
+                <FaPlusCircle size={24} />
+              )}
             </span>
           </div>
           {activeIndex === index && (
