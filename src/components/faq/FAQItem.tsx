@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-interface FAQItemProps {
+export interface FAQItemProps {
   question: string;
   answer: string;
 }
