@@ -25,9 +25,16 @@ const AboutSection: React.FC<AboutSectionProps> = ({ title, imageURL, content, c
         <p className="text-gray-700" dangerouslySetInnerHTML={{ __html: content }} />
       </div>
 
-      <div className="absolute w-1/3 left-1/2 transform -translate-x-1/2" style={{ bottom: '-20px' }}>
-        {children}
+      <div
+        className="absolute left-1/2 transform -translate-x-1/2 flex justify-center"
+        style={{ bottom: '-30px' }}
+      >
+        <div className="px-4 py-2 text-white rounded-lg whitespace-nowrap">
+          {children}
+        </div>
       </div>
+
+
     </div>
   );
 };
