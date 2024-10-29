@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-interface FAQItemProps {
+export interface FAQItemProps {
   question: string;
   answer: string;
 }
