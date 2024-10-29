@@ -42,63 +42,76 @@ const Countdown: React.FC = () => {
   if (!isMounted) return null;
 
   return (
-    <div className="flex justify-center text-white mb-4">
+    <div className="flex justify-center grid-cols-4 text-white mb-4">
       {/* Days */}
-      <div className="mx-1 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 items-center sm:items-start">
+      <div className="flex-initial mx-1 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 items-center sm:items-start">
         <div
-          className="text-[80px] font-semibold leading-[80px] flex items-center sm:items-start"
+          className="text-[60px] sm:text-[80px] font-semibold leading-[60px] sm:leading-[80px] flex justify-center sm:items-start font-mono"
           style={{
-            textShadow: "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+            minWidth: "70px",
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
           }}
         >
           {timeLeft.days}
         </div>
-        <span className="text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">days</span>
+        <span className="text-[14px] sm:text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">
+          days
+        </span>
       </div>
-  
+
       {/* Hours */}
       <div className="mx-1 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 items-center sm:items-start">
         <div
-          className="text-[80px] font-semibold leading-[80px] flex items-center sm:items-start"
+          className="text-[60px] sm:text-[80px] font-semibold leading-[60px] sm:leading-[80px] flex justify-center sm:items-start font-mono"
           style={{
-            textShadow: "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+            minWidth: "70px",
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
           }}
         >
           {timeLeft.hours}
         </div>
-        <span className="text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">hours</span>
+        <span className="text-[14px] sm:text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">
+          hours
+        </span>
       </div>
-  
+
       {/* Minutes */}
       <div className="mx-1 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 items-center sm:items-start">
         <div
-          className="text-[80px] font-semibold leading-[80px] flex items-center sm:items-start"
+          className="text-[60px] sm:text-[80px] font-semibold leading-[60px] sm:leading-[80px] flex justify-center sm:items-start font-mono"
           style={{
-            textShadow: "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+            minWidth: "70px",
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
           }}
         >
           {timeLeft.minutes}
         </div>
-        <span className="text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">mins</span>
+        <span className="text-[14px] sm:text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">
+          mins
+        </span>
       </div>
-  
+
       {/* Seconds */}
       <div className="mx-1 grid grid-cols-1 sm:grid-cols-2 sm:gap-2 items-center sm:items-start">
         <div
-          className="text-[80px] font-semibold leading-[80px] flex items-center sm:items-start"
+          className="text-[60px] sm:text-[80px] font-semibold leading-[60px] sm:leading-[80px] flex justify-center sm:items-start font-mono" // Monospace font added
           style={{
-            textShadow: "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
+            minWidth: "70px",
+            textShadow:
+              "0 0 4px rgba(0, 0, 0, 0.75), 0 4px 4px rgba(0, 0, 0, 0.75)",
           }}
         >
           {timeLeft.seconds}
         </div>
-        <span className="text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">secs</span>
+        <span className="text-[14px] sm:text-[16px] text-center mt-2 mx-0 sm:mt-[6px] italic">
+          secs
+        </span>
       </div>
     </div>
   );
-  
-  
-  
 };
 
 export default Countdown;
