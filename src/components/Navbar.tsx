@@ -126,10 +126,12 @@ const Navbar: React.FC = () => {
           {isMenuOpen && (
             <div className="md:hidden block py-4 bg-nav-backround text-white z-50 w-full"
               ref={menuRef}>
-              <Link href="/" className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 HOME
               </Link>
-              <Link href="/about" className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/about" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 ABOUT
               </Link>
               <div className="relative flex flex-col items-start w-full">
@@ -160,19 +162,19 @@ const Navbar: React.FC = () => {
                   <div className=" text-white z-50 w-full">
                     <Link
                       href="/workshops/day1"
-                      className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
                       Day 1
                     </Link>
                     <Link
                       href="/workshops/day2"
-                      className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
                       Day 2
                     </Link>
                     <Link
                       href="/workshops/day3"
-                      className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
                       Day 3
                     </Link>
@@ -180,15 +182,18 @@ const Navbar: React.FC = () => {
                 </div>
               </div>
 
-              <Link href="/sponsors" className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/sponsors" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 SPONSORS
               </Link>
 
-              <Link href="/faq" className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/faq" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 FAQ
               </Link>
 
-              <Link href="/registration" className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/registration"
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 REGISTRATION
               </Link>
             </div>
