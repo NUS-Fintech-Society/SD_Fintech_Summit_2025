@@ -30,12 +30,12 @@ export default function Page() {
           <Image
             src="/HomeLogoFull.png"
             alt="Fintech Summit Logo"
-            width={700}
-            height={700}
+            width={500}
+            height={500}
           />
         </div>
         <h2
-              className="text-4xl lg:text-5xl my-4 md:mb-6 lg:mb-8 mt-4 font-bold"
+              className="text-4xl lg:text-5xl my-4 md:mb-6 lg:mb-8 mt-12 font-bold"
               style={{ color: "#6c93d6" }}
             >
               Opening Ceremony
