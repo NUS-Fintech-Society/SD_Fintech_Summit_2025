@@ -21,7 +21,7 @@ export default function Page() {
               justifyContent: "space-between",
             }}
           >
-            <h1 className="text-7xl md:text-7xl lg:text-9xl  text-black font-bold text-left">
+            <h1 className="text-6xl lg:text-7xl text-black font-bold text-left">
               <div className="[text-shadow:_2px_3px_4px_#AAAAAA]">FAQs</div>
             </h1>
           </div>
@@ -35,28 +35,28 @@ export default function Page() {
           />
         </div>
         <h2
-              className="text-5xl md:text-5xl lg:text-7xl my-4 md:mb-6 lg:mb-8 mt-8 font-bold"
+              className="text-4xl lg:text-5xl my-4 md:mb-6 lg:mb-8 mt-4 font-bold"
               style={{ color: "#6c93d6" }}
             >
               Opening Ceremony
             </h2>
         <FaqAccordion items={mockData.openingCeremony} />
         <h2
-          className="text-5xl md:text-5xl lg:text-7xl my-4 md:mb-6 lg:mb-8 mt-8 font-bold"
+          className="text-4xl lg:text-5xl my-4 md:mb-6 lg:mb-8 mt-8 font-bold"
           style={{ color: "#6c93d6" }}
         >
           Hackathon
         </h2>
         <FaqAccordion items={mockData.hackathon} />
         <h2
-          className="text-5xl md:text-5xl lg:text-7xl mb-4 md:mb-6 lg:mb-8 mt-8 font-bold"
+          className="text-4xl lg:text-5xl mb-4 md:mb-6 lg:mb-8 mt-8 font-bold"
           style={{ color: "#6c93d6" }}
         >
           Workshops
         </h2>
         <FaqAccordion items={mockData.workshops} />
         <h2
-          className="text-5xl md:text-5xl lg:text-7xl mb-4 md:mb-6 lg:mb-8 mt-8 font-bold"
+          className="text-4xl lg:text-5xl mb-4 md:mb-6 lg:mb-8 mt-8 font-bold"
           style={{ color: "#6c93d6" }}
         >
           Demo day
