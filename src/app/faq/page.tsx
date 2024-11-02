@@ -32,7 +32,7 @@ export default function Page() {
             </h2>
           </div>
           <Image
-            src="/HomeLogoFull.png"
+            src="/HomeLogoWide.png"
             alt="Fintech Summit Logo"
             width={650}
             height={650}

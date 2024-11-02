@@ -10,7 +10,7 @@ const Header: React.FC = () => {
       {/* Image Container */}
       <div className="w-full h-full lg:w-[45%] flex justify-center items-end lg:justify-start lg:mb-0">
         <Image
-          src="/HomeLogoFull.png"
+          src="/HomeLogoWide.png"
           alt="Fintech Summit Logo"
           width={700}
           height={700}
