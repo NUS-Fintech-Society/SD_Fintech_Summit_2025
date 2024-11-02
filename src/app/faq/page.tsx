@@ -26,7 +26,7 @@ export default function Page() {
             </h1>
           </div>
         </div>
-        <div className="flex justify-center lg:justify-end my-[-6rem] lg:my-[-10rem]">
+        <div className="flex justify-center lg:justify-end mb-[-4rem] lg:my-[-10rem]">
           <Image
             src="/HomeLogoFull.png"
             alt="Fintech Summit Logo"
