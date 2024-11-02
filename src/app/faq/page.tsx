@@ -34,8 +34,8 @@ export default function Page() {
           <Image
             src="/HomeLogoFull.png"
             alt="Fintech Summit Logo"
-            width={500}
-            height={500}
+            width={650}
+            height={650}
             className="mb-8"
           />
         </div>

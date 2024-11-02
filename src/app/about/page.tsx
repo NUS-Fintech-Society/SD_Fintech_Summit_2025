@@ -8,7 +8,7 @@ const AboutPage: React.FC = () => {
     <div className="container mx-auto p-8">
 
       <h1 className="text-3xl font-bold text-center text-header-color mb-8">FINTECH SUMMIT </h1>
-      <AboutSection title="FINTECH SUMMIT" imageURL = "/Summit Logo.svg"  
+      <AboutSection title="FINTECH SUMMIT" imageURL = "/HomeLogoFull.png"  
       content="To Educate students with <strong>Fintech knowledge</strong> through events
       and industry projects, and connect and establish relationship
       with industry leaders." />
