@@ -13,8 +13,6 @@ const HomePage: React.FC = () => {
       <div className="container mx-auto p-8">
         <Header />
         <ProblemStatement />
-        <Bounty />
-        <Prizes />
         <Timeline />
       </div>
     </div>

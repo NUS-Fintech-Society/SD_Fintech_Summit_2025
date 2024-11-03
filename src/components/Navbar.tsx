@@ -192,7 +192,7 @@ const Navbar: React.FC = () => {
                 FAQ
               </Link>
 
-              <Link href="/registration"
+              <Link href="/"
               onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 REGISTRATION
               </Link>

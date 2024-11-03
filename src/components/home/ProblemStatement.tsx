@@ -1,19 +1,13 @@
-// ProblemStatement.tsx
 import React from 'react';
-import SectionTitle from './SectionTitle';
 
-const ProblemStatement: React.FC = () => {
+const ProblemStatement = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-4 my-4">
-      {/* Section Title */}
-      <SectionTitle title="Problem Statements" />
-
-      {/* Problem Statement Boxes */}
-      <div className="flex flex-col space-y-3 w-full sm:w-8/12">
-        <div className="bg-[#D9D9D9] w-full h-20 rounded-md"></div>
-        <div className="bg-[#D9D9D9] w-full h-20 rounded-md"></div>
-        <div className="bg-[#D9D9D9] w-full h-20 rounded-md"></div>
-      </div>
+    <div className="flex flex-col sm:flex-row items-center sm:items-start p-4 justify-center rounded-lg">
+      <div className="flex flex-row sm:flex-col text-center sm:text-left mb-4 sm:mr-4 text-[#D9DFA1]">
+        <span className="text-2xl font-semibold leading-none mr-2 sm:mr-0">PROBLEM</span>
+        <span className="text-2xl font-semibold leading-none">STATEMENT</span>
+      </div>      
+      <div className="bg-[#D9D9D9] w-full sm:w-5/12 h-28 rounded-md"></div>
     </div>
   );
 };
