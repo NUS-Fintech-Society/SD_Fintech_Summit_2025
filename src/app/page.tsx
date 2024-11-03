@@ -6,6 +6,7 @@ import ProblemStatement from "@/components/home/ProblemStatement";
 import Bounty from "@/components/home/Bounty";
 import Prizes from "@/components/home/Prizes";
 import Timeline from "@/components/home/Timeline";
+import DownloadButton from "@/components/home/DownloadButton";
 
 const HomePage: React.FC = () => {
   return (
@@ -13,6 +14,9 @@ const HomePage: React.FC = () => {
       <div className="container mx-auto p-8">
         <Header />
         <ProblemStatement />
+        <Bounty />
+        <Prizes />
+        <DownloadButton />
         <Timeline />
       </div>
     </div>
