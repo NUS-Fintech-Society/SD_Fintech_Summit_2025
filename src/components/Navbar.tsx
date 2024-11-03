@@ -116,7 +116,7 @@ const Navbar: React.FC = () => {
                 FAQ
               </Link>
 
-              <Link href="/registration" className="text-white font-bold text-lg hover:text-gray-200 md:mr-[5%]" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
+              <Link href="/" className="text-white font-bold text-lg hover:text-gray-200 md:mr-[5%]" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                 REGISTRATION
               </Link>
             </div>
