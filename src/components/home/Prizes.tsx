@@ -6,7 +6,7 @@ const Prizes: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 my-4">
     {/* Section Title */}
-    <SectionTitle title="Problem Statements" />
+    <SectionTitle title="Prizes" />
   </div>
   );
 };

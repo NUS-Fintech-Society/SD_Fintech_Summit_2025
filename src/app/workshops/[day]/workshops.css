@@ -24,3 +24,13 @@
   position: relative;
   z-index: 1;
 }
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .backgroundImage {
+    background-size: contain; /* Makes the image fit within the container */
+    background-position: top; /* Adjusts positioning to make it look better when zoomed out */
+    height: 100%; /* Ensures the image covers the screen height */
+  }
+}

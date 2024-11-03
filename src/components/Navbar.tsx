@@ -4,11 +4,11 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 
 const Navbar: React.FC = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState<"workshops" | "faq" | null>(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState<"workshops" | "faq" | "about" | null>(null);
   const [hoverDelay, setHoverDelay] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control hamburger menu
 
-  const handleMouseEnter = (dropdown: "workshops" | "faq") => {
+  const handleMouseEnter = (dropdown: "workshops" | "faq" | "about") => {
     if (hoverDelay) clearTimeout(hoverDelay);
     setIsDropdownOpen(dropdown);
   };
@@ -87,9 +87,21 @@ const Navbar: React.FC = () => {
                 HOME
               </Link>
 
-              <Link href="/about" className="text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
-                ABOUT
-              </Link>
+              {/* About Dropdown */}
+              <div className="relative flex items-center" onMouseEnter={() => handleMouseEnter("about")} onMouseLeave={handleMouseLeave}>
+                <button className="text-white font-bold text-lg flex items-center hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
+                  ABOUT
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className={`w-4 h-4 ml-2 transform ${isDropdownOpen === "about" ? "rotate-180" : "rotate-0"} transition-transform duration-200`}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isDropdownOpen === "about" && (
+                  <div className="absolute left-0 top-full mt-1 w-40 bg-blue-400 text-white rounded-lg shadow-lg z-50">
+                    <Link href="/about" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>About</Link>
+                    <Link href="/contact" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>Contact Us</Link>
+                  </div>
+                )}
+              </div>
 
               {/* Workshops Dropdown */}
               <div className="relative flex items-center" onMouseEnter={() => handleMouseEnter("workshops")} onMouseLeave={handleMouseLeave}>
@@ -116,7 +128,11 @@ const Navbar: React.FC = () => {
                 FAQ
               </Link>
 
-              <Link href="/" className="text-white font-bold text-lg hover:text-gray-200 md:mr-[5%]" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
+              <Link 
+                href="/" 
+                className="text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 md:mr-[5%]"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
+              >
                 REGISTRATION
               </Link>
             </div>
@@ -124,21 +140,46 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div className="md:hidden block py-4 bg-nav-backround text-white z-50 w-full"
-              ref={menuRef}>
-              <Link href="/" 
-              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
+            <div className="md:hidden block py-4 bg-nav-backround text-white z-50 w-full" ref={menuRef}>
+              <Link href="/" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200 mb-2">
                 HOME
               </Link>
-              <Link href="/about" 
-              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
-                ABOUT
-              </Link>
-              <div className="relative flex flex-col items-start w-full">
+
+              {/* About Dropdown for Mobile */}
+              <div className="relative w-full mb-2">
                 <button
                   className="flex items-center w-full px-4 py-2"
-                  onClick={() => setIsDropdownOpen(isDropdownOpen === "workshops" ? null : "workshops")} // Toggle dropdown on button click
-                  onMouseEnter={() => handleMouseEnter("workshops")} // Open on hover
+                  onClick={() => setIsDropdownOpen(isDropdownOpen === "about" ? null : "about")}
+                >
+                  ABOUT
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className={`w-4 h-4 ml-2 transform ${isDropdownOpen === "about" ? "rotate-180" : "rotate-0"} transition-transform duration-200`}
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+                {isDropdownOpen === "about" && (
+                  <div className="w-full bg-blue-400">
+                    <Link href="/about" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200">
+                      About
+                    </Link>
+                    <Link href="/contact" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200">
+                      Contact Us
+                    </Link>
+                  </div>
+                )}
+              </div>
+
+              {/* Workshops Dropdown for Mobile */}
+              <div className="relative w-full mb-2">
+                <button
+                  className="flex items-center w-full px-4 py-2"
+                  onClick={() => setIsDropdownOpen(isDropdownOpen === "workshops" ? null : "workshops")}
                 >
                   WORKSHOPS
                   <svg
@@ -147,58 +188,42 @@ const Navbar: React.FC = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className={`w-4 h-4 ml-2 transform ${isDropdownOpen === "workshops" ? "rotate-180" : "rotate-0"
-                      } transition-transform duration-200`}
+                    className={`w-4 h-4 ml-2 transform ${isDropdownOpen === "workshops" ? "rotate-180" : "rotate-0"} transition-transform duration-200`}
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-
-                {/* Dropdown menu */}
-                <div
-                  onMouseLeave={handleMouseLeave} // Close when mouse leaves the dropdown
-                  className={`w-full bg-blue-400 ${isDropdownOpen === "workshops" ? "block" : "hidden"}`} // Control visibility
-                >
-                  <div className=" text-white z-50 w-full">
-                    <Link
-                      href="/workshops/day1"
-                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
-                    >
+                {isDropdownOpen === "workshops" && (
+                  <div className="w-full bg-blue-400">
+                    <Link href="/workshops/day1" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200">
                       Day 1
                     </Link>
-                    <Link
-                      href="/workshops/day2"
-                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
-                    >
+                    <Link href="/workshops/day2" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200">
                       Day 2
                     </Link>
-                    <Link
-                      href="/workshops/day3"
-                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
-                    >
+                    <Link href="/workshops/day3" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200">
                       Day 3
                     </Link>
                   </div>
-                </div>
+                )}
               </div>
 
-              <Link href="/sponsors" 
-              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/sponsors" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200 mb-2">
                 SPONSORS
               </Link>
-
-              <Link href="/faq" 
-              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
+              <Link href="/faq" onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200 mb-2">
                 FAQ
               </Link>
-
-              <Link href="/"
-              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
+              <Link 
+                href="/" 
+                onClick={() => setIsMenuOpen(false)} // This will close the menu
+                className="text-white font-bold text-lg px-4 py-2 border-[1px] border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 md:mr-[5%]"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
+              >
                 REGISTRATION
               </Link>
             </div>
           )}
-
         </div>
       </nav>
     </>
