@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         />
       </div>
 
-      <div className="w-full lg:w-[55%] text-center lg:text-left">
+      <div className="w-full  text-center lg:text-left">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-semibold text-[#D9DFA1] drop-shadow-md">
           NUS FINTECH
         </h1>
