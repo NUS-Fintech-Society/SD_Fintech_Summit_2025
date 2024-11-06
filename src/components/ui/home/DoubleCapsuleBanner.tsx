@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import React from "react";
 
 type DoubleCapsuleBannerProps = {
   title: string;
@@ -16,7 +16,7 @@ const DoubleCapsuleBanner: React.FC<DoubleCapsuleBannerProps> = ({
       ></div>
       <div
         className="absolute left-0 w-[50%] h-full bg-[#FFF0C5] rounded-r-full z-20 flex items-center justify-center"
-        style={{ top: "14px" }} 
+        style={{ top: "14px" }}
       >
         <span className="text-blue-900 text-xl md:text-3xl text-center font-bold">
           {title}
