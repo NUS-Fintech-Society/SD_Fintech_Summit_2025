@@ -1,12 +1,12 @@
 // Prizes.tsx
 import React from 'react';
-import SectionTitle from './SectionTitle';
+import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
 const Prizes: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 my-4">
-    {/* Section Title */}
-    <SectionTitle title="Prizes" />
+    {/* Banner With Title */}
+    <DoubleCapsuleBanner title="Prizes" />
   </div>
   );
 };
