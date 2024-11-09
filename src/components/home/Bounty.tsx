@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
+import CircleCapsuleBanner from '../ui/home/CircleCapsuleBanner';
 
 interface Challenge {
   title: string;
@@ -24,6 +25,7 @@ const Bounty: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-4 mb-4">
+      <CircleCapsuleBanner title="Bounty" />
       <div className="bg-[#0B2858] text-[#FFA200] rounded-lg p-6 w-full max-w-md mx-auto shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-center text-[#FFA200]">Bounties</h2>
 

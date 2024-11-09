@@ -1,12 +1,12 @@
 // ProblemStatement.tsx
 import React from 'react';
-import SectionTitle from './SectionTitle';
+import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
 const ProblemStatement: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 my-4">
-      {/* Section Title */}
-      <SectionTitle title="Problem Statements" />
+      {/* Banner With Title */}
+      <DoubleCapsuleBanner title="Problem Statements" />
 
       {/* Problem Statement Boxes */}
       <div className="flex flex-col items-center justify-center space-y-3 w-full">

@@ -1,6 +1,5 @@
 // HomePage.tsx
 import React from "react";
-import Navbar from "@/components/Navbar";
 import Header from "@/components/home/Header";
 import ProblemStatement from "@/components/home/ProblemStatement";
 import Bounty from "@/components/home/Bounty";

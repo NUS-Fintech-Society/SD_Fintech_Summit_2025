@@ -1,5 +1,5 @@
 import React from 'react';
-import SectionTitle from './SectionTitle';
+import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
 const prizes = [
   { place: '2nd', amount: '$2,000' },
@@ -10,8 +10,8 @@ const prizes = [
 const Prizes: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 my-8">
-      {/* Section Title */}
-      <SectionTitle title="Prizes" />
+      {/* Banner With Title */}
+      <DoubleCapsuleBanner title="Prizes" />
 
       {/* Prizes Container */}
       <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-2xl mt-8">
