@@ -1,3 +1,4 @@
+// CircleCapsuleBanner.tsx
 import React from "react";
 
 type CircleCapsuleBannerProps = {
@@ -6,7 +7,7 @@ type CircleCapsuleBannerProps = {
 
 const CircleCapsuleBanner: React.FC<CircleCapsuleBannerProps> = ({ title }) => {
   return (
-    <div className="flex justify-end items-center h-18 w-full p-8 relative overflow-visible">
+    <div className="flex justify-end items-center h-18 w-full p-8 relative overflow-visible mb-8"> {/* Added mb-8 for space */}
       <div className="absolute left-0 h-full overflow-hidden z-5">
         <div className="flex space-x-0 h-full items-center">
           {Array.from({ length: 10 }).map((_, index) => (
