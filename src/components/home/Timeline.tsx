@@ -6,56 +6,78 @@ type TimelineItemType = {
   title: string;
   description: string;
   date: string;
-  link: string;
+  link?: string;
 };
 
 const timelineItems: TimelineItemType[] = [
   {
-    title: "Registration",
+    title: "Workshop and Hackathon Registration Opens",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "01 JAN",
+      "Hackathon Problem Statement Announcement",
+    date: "12 DEC",
     link: "/",
   },
   {
-    title: "Workshop",
+    title: "Hackathon Ideation",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "02 JAN",
+      "• Participants start coding and ideation \n • Submission Deadline: 31 Dec 2024, 2359",
+    date: "12 DEC to 31 DEC",
     link: "/",
   },
   {
-    title: "Workshop",
+    title: "Workshop and Hackathon Registration Closes",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "03 JAN",
+      "",
+    date: "31 DEC",
+  },
+  {
+    title: "Opening Ceremony (Physical)",
+    description:
+      "• Welcoming speech \n • Introduce the summit \n • Keynote speeches",
+    date: "06 JAN",
+  },
+  {
+    title: "Ideation Judging & Results",
+    description:
+      "Release of results by 2359",
+    date: "01 JAN to 07 JAN",
+  },
+  {
+    title: "Online Workshops",
+    description:
+      "",
+    date: "02 JAN to 16 JAN",
     link: "/",
   },
   {
-    title: "Workshop",
+    title: "Prototyping",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "03 JAN",
+      "• Semi-finalists work on developing prototypes \n • Submission Deadline: 12 JAN 2025, 2359",
+    date: "07 JAN to 12 JAN",
     link: "/",
   },
   {
-    title: "Workshop",
+    title: "Prototype Judging",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "03 JAN",
-    link: "/",
+      "• Judging of submitted prototypes \n • Prototyping Result Release: 14 JAN 2025, 1200",
+    date: "13 JAN to 14 JAN",
   },
   {
-    title: "Hackathon",
+    title: "Hacker House: Preparation for Finalists",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    date: "04 JAN",
-    link: "/",
+      "• Finalists prepare for their final sprint",
+    date: "14 JAN to 16 JAN",
+  },
+  {
+    title: "Finalist Demo Day (Physical)",
+    description:
+      "• 0900 - 1200: Sponsoring companies set up booths. \n • 1200 - 1500: Finalist presentations to judges.",
+    date: "17 JAN",
   },
 ];
 
 const Timeline = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(true);
 
   const toggleTimeline = () => {
     setIsVisible(!isVisible);
@@ -78,8 +100,8 @@ const Timeline = () => {
               <path
                 d="M4.71152 3.67446C4.17096 3.46151 3.90067 3.35504 3.72846 3.41232C3.57892 3.46207 3.46158 3.5794 3.41184 3.72894C3.35455 3.90116 3.46102 4.17144 3.67397 4.71201L8.97461 18.1675C9.14612 18.6028 9.23188 18.8205 9.37164 18.9079C9.49348 18.9841 9.64219 19.0041 9.77986 18.963C9.93778 18.9158 10.0782 18.7286 10.3589 18.3542L12.4996 15.5001L15.9489 20.2429C16.1385 20.5036 16.2334 20.634 16.3542 20.6885C16.4602 20.7363 16.5796 20.7457 16.6918 20.715C16.8196 20.68 16.9336 20.566 17.1616 20.338L20.3376 17.1621C20.5655 16.9341 20.6795 16.8201 20.7145 16.6923C20.7452 16.5801 20.7359 16.4607 20.688 16.3547C20.6335 16.2338 20.5032 16.139 20.2424 15.9494L15.4996 12.5001L18.3538 10.3594C18.7281 10.0787 18.9153 9.93827 18.9625 9.78035C19.0036 9.64268 18.9836 9.49397 18.9074 9.37213C18.82 9.23237 18.6024 9.14661 18.167 8.97509L4.71152 3.67446Z"
                 stroke="black"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               />
             </svg>
@@ -95,10 +117,10 @@ const Timeline = () => {
               key={index}
               className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group"
             >
-              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#D9D9D9] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_4px_14px_rgba(0,0,0,0.6)]"></div>
+              <div className="flex items-center justify-center w-8 h-8 rounded-full bg-[#F5A202] shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 shadow-[0_4px_14px_rgba(0,0,0,0.6)]"></div>
 
               <div
-                className={`relative w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] bg-[#D9D9D9] p-6 rounded-lg border border-[#D9D9D9] shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
+                className={`relative w-[calc(100%-6rem)] md:w-[calc(50%-4rem)] bg-gradient-to-r bg-[#D9D9D9] p-8 rounded-lg border border-[#D9D9D9] shadow-[0_4px_10px_rgba(0,0,0,0.6)] 
                 ${index % 2 === 0 ? "ml-8" : "md:mr-8"} 
                 before:absolute before:content-[''] before:w-0 before:h-0 before:border-[32px] before:border-transparent 
                 ${
@@ -114,13 +136,15 @@ const Timeline = () => {
                 <div className="font-bold text-slate-900 mb-2">
                   {item.title}
                 </div>
-                <div className="text-slate-500 mb-4">{item.description}</div>
-                <a
-                  href={item.link}
-                  className="bg-[#F5A202] text-[#102B71] py-2 px-4 rounded-full font-medium"
-                >
-                  More
-                </a>
+                <div className="text-slate-500 mb-4 whitespace-pre-line">{item.description}</div>
+                {item.link && (
+                   <a
+                   href={item.link}
+                   className="bg-[#F5A202] text-[#102B71] py-2 px-4 rounded-full font-medium"
+                 >
+                   More
+                 </a>
+                )}
               </div>
             </div>
           ))}

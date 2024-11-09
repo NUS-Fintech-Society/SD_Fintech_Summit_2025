@@ -1,3 +1,4 @@
+// DoubleCapsuleBanner.tsx
 import React from "react";
 
 type DoubleCapsuleBannerProps = {
@@ -8,7 +9,7 @@ const DoubleCapsuleBanner: React.FC<DoubleCapsuleBannerProps> = ({
   title,
 }) => {
   return (
-    <div className="flex justify-end items-center h-18 w-full p-8 relative overflow-visible">
+    <div className="flex justify-end items-center h-18 w-full p-8 relative overflow-visible mb-8"> {/* Added mb-8 for space */}
       <div className="absolute left-0 w-[63%] h-full bg-[#FFA200] rounded-r-full z-5"></div>
       <div
         className="absolute right-0 w-[39%] h-full bg-[#FDCF03] rounded-l-full z-10"
