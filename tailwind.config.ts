@@ -20,6 +20,9 @@ const config: Config = {
         "gradient-conic": 
         "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      spacing: {
+        'space-1st': '16px', // Custom margin for 1st prize card
+      },
     },
   },
   plugins: [],

@@ -30,9 +30,9 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
         <p className="text-gray-900 font-semibold m-4">{description}</p>
         <div
           style={{ borderRadius: 50 }}
-          className="m-4 flex justify-between items-center mt-2 bg-gray-100 p-4"
+          className="m-4 flex flex-col sm:flex-row justify-between items-center mt-2 bg-gray-100 p-4"
         >
-          <p className="text-gray-700 font-bold">Date: {date}</p>
+          <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
           <p className="text-gray-700 font-bold">Time: {time}</p>
         </div>
       </div>
