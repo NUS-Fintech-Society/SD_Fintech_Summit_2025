@@ -15,12 +15,12 @@ const Prizes: React.FC = () => {
       <DoubleCapsuleBanner title="Prizes" />
 
       {/* Prizes Container */}
-      <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 w-full max-w-2xl mt-8">
+      <div className="flex flex-col sm:flex-row items-center justify-center w-full max-w-2xl mt-8 space-y-0 sm:space-y-0 sm:space-x-4">
         {prizes.map((prize, index) => (
           <div
             key={index}
             className={`relative flex flex-col items-center text-center rounded-lg px-6 py-8 shadow-lg ${
-              prize.place === '1st' ? 'h-48' : 'h-40'
+              prize.place === '1st' ? 'order-first sm:order-none h-40 sm:h-48 mb-6 sm:mb-0' : 'h-40'
             } w-full sm:w-1/3 bg-gradient-to-b from-[#0C2859] to-[#0C2859]`}
           >
             {/* Place Label */}
