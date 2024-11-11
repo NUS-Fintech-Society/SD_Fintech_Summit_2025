@@ -16,7 +16,7 @@ const Sponsors = () => {
         { name: "Dethings", imgSrc: "./sponsors/DeThings.png", link: "https://dethings.com" },
         { name: "eFinancialCareers", imgSrc: "./sponsors/eFinancialCareers.svg", link: "https://www.efinancialcareers.sg" },
         { name: "Bank of America", imgSrc: "./sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
-        { name: "Coingecko", imgSrc: "./sponsors/Coingecko.png", link: "https://www.coingecko.com" }
+        { name: "Coingecko", imgSrc: "./sponsors/CoinGecko.png", link: "https://www.coingecko.com" }
     ];
 
     return (
