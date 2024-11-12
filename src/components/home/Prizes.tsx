@@ -20,7 +20,11 @@ const Prizes: React.FC = () => {
           <div
             key={index}
             className={`relative flex flex-col items-center text-center rounded-lg px-6 py-8 shadow-lg ${
-              prize.place === '1st' ? 'order-first sm:order-none h-40 sm:h-48 mb-6 sm:mb-0' : 'h-40'
+              prize.place === '1st' 
+                ? 'order-first sm:order-none h-40 sm:h-48 mb-6 sm:mb-0 z-0'  // Lowest z-index for 1st on mobile
+                : prize.place === '2nd' 
+                  ? '-mt-10 sm:mt-0 z-10'  // Mid z-index for 2nd on mobile
+                  : 'mt-6 sm:mt-0 z-20'  // Shift down 2px for 3rd on mobile
             } w-full sm:w-1/3 bg-gradient-to-b from-[#0C2859] to-[#0C2859]`}
           >
             {/* Place Label */}
