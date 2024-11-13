@@ -3,21 +3,20 @@ import SponsorSection from '../../components/sponsors/SponsorSection';
 
 const Sponsors = () => {
     const platinumSponsors = [
-        { name: "Sponsor 1", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 2", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 3", imgSrc: "./tiktok.png", link: "/" }
+        { name: "Northern Trust", imgSrc: "./sponsors/Northern Trust.png", link: "https://www.northerntrust.com" },
+        { name: "Ripple", imgSrc: "./sponsors/Ripple.png", link: "https://ripple.com" }
     ];
     const goldSponsors = [
-        { name: "Sponsor 1", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 2", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 3", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 4", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 5", imgSrc: "./tiktok.png", link: "/" }
+        { name: "Jane Street", imgSrc: "./sponsors/Jane Street.png", link: "https://www.janestreet.com" },
+        { name: "Metacamp", imgSrc: "./sponsors/Metacamp.png", link: "https://metacamp.so" },
+        { name: "Moledao", imgSrc: "./sponsors/Moledao.png", link: "https://moledao.io" },
+        { name: "Flowdesk", imgSrc: "./sponsors/Flowdesk.png", link: "https://flowdesk.co" }
     ];
     const silverSponsors = [
-        { name: "Sponsor 1", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 2", imgSrc: "./tiktok.png", link: "/" },
-        { name: "Sponsor 3", imgSrc: "./tiktok.png", link: "/" }
+        { name: "Dethings", imgSrc: "./sponsors/DeThings.png", link: "https://dethings.com" },
+        { name: "eFinancialCareers", imgSrc: "./sponsors/eFinancialCareers.svg", link: "https://www.efinancialcareers.sg" },
+        { name: "Bank of America", imgSrc: "./sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
+        { name: "Coingecko", imgSrc: "./sponsors/CoinGecko.png", link: "https://www.coingecko.com" }
     ];
 
     return (

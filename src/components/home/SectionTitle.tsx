@@ -8,7 +8,7 @@ interface SectionTitleProps {
 const SectionTitle: React.FC<SectionTitleProps> = ({ title }) => {
   return (
     <div>
-        Placeholder design for {title}
+        Placeholder design for {title} 
     </div>
   );
 };

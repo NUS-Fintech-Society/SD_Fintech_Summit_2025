@@ -1,13 +1,19 @@
+// ProblemStatement.tsx
 import React from 'react';
+import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
-const ProblemStatement = () => {
+const ProblemStatement: React.FC = () => {
   return (
-    <div className="flex flex-col sm:flex-row items-center sm:items-start p-4 justify-center rounded-lg">
-      <div className="flex flex-row sm:flex-col text-center sm:text-left mb-4 sm:mr-4 text-[#D9DFA1]">
-        <span className="text-2xl font-semibold leading-none mr-2 sm:mr-0">PROBLEM</span>
-        <span className="text-2xl font-semibold leading-none">STATEMENT</span>
-      </div>      
-      <div className="bg-[#D9D9D9] w-full sm:w-5/12 h-28 rounded-md"></div>
+    <div className="flex flex-col items-center justify-center p-4 my-4">
+      {/* Banner With Title */}
+      <DoubleCapsuleBanner title="Problem Statements" />
+
+      {/* Problem Statement Boxes */}
+      <div className="flex flex-col items-center justify-center space-y-3 w-full mt-12">
+        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 h-28 rounded-md"></div>
+        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 h-28 rounded-md"></div>
+        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 h-28 rounded-md"></div>
+      </div>
     </div>
   );
 };
