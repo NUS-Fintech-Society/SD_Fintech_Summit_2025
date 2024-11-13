@@ -48,27 +48,125 @@ export const FaqAccordion = ({ items }: { items: FAQItemProps[] }) => {
 };
 
 export const mockData: Record<
-  "openingCeremony" | "hackathon" | "workshops" | "demo",
+  "openingCeremony" | "hackathon" | "workshops" | "demo" | "afterEventParty",
   FAQItemProps[]
 > = {
   openingCeremony: [
-    { question: "When is the Opening Ceremony?", answer: "Insert answer here" },
     {
-      question: "Where is the Opening Ceremony?",
-      answer: "Insert answer here",
+      question: "How do we sign up?",
+      answer:
+        "You can sign up via the link on our Linktree which will go live on 12 December 2024. Attendance is compulsory to all Hackathon participants.",
+    },
+    {
+      question: "What can I expect for the opening ceremony?",
+      answer:
+        "A panel discussion as well as breakout rooms for each problem challenge where participants can check 1 to 1 with the judges/mentors! There’ll also be free goodies for everyone as well!",
     },
   ],
   hackathon: [
-    { question: "When is the Hackathon?", answer: "Insert answer here" },
-    { question: "Where is the Hackathon?", answer: "Insert answer here" },
+    {
+      question: "Who is eligible to take part in the hackathon?",
+      answer:
+        "NUS Fintech Summit 2025 is open to all tertiary students across the globe.",
+    },
+    {
+      question:
+        "Is there anything to take note of if I am participating from overseas?",
+      answer:
+        "If you qualify as a finalist, you (and your team) will be required to be present physically for our Demo Day.",
+    },
+    {
+      question: "Are there any requirements for the hackathon team formation?",
+      answer:
+        "The team should consist of 2-5 members from any tertiary institute. Please appoint a Team Lead to be the main point of contact throughout the hackathon.",
+    },
+    {
+      question: "How do we sign up for the hackathon?",
+      answer:
+        "Sign-ups will be made available on 20th December 2024. Each team should only sign up once and appoint a team lead. If any changes arise, please email our team at nusfintech.ops@gmail.com.",
+    },
+    {
+      question: "Will the hackathon be conducted remotely?",
+      answer:
+        "The hackathon will be conducted remotely with the exception of opening ceremony and demo day. Overseas finalists are strongly encouraged to be present physically.",
+    },
+    {
+      question: "Where do we submit our files for the hackathon?",
+      answer: "TBC",
+    },
+    {
+      question: "What is the judging criteria and submission requirements?",
+      answer:
+        "Refer to the Hackathon Details pages for the rubrics for each round.",
+    },
+    {
+      question: "What does it cost?",
+      answer: "No registration fee is required.",
+    },
+    {
+      question: "Who do we reach out to if we have more enquiries?",
+      answer:
+        "If you have any further questions, you can contact us via nusfintech.ops@gmail.com.",
+    },
   ],
   workshops: [
-    { question: "When is the Workshop?", answer: "Insert answer here" },
-    { question: "Where is the Workshop?", answer: "Insert answer here" },
+    {
+      question: "How do we sign-up?",
+      answer: "You may retrieve the workshop signup links from our LinkTree.",
+    },
+    {
+      question: "Can I attend the workshop virtually?",
+      answer: "Workshops held on 12th to 16th January 2025 are virtual.",
+    },
+    {
+      question: "Are the workshops compulsory for hackathon participants?",
+      answer:
+        "Workshops are not compulsory for hackathon participants. These are meant to provide participants with insights on the developments within the Fintech space.",
+    },
+    {
+      question:
+        "If I am not participating in the hackathon, can I still sign up for any of the workshops?",
+      answer:
+        "Yes, the workshops are open to all tertiary students and public.",
+    },
+    {
+      question: "How many workshops can I sign up for?",
+      answer:
+        "There is no limit to the number of workshops you can sign up for.",
+    },
   ],
   demo: [
-    { question: "When is the Demo?", answer: "Insert answer here" },
-    { question: "Where is the Demo?", answer: "Insert answer here" },
+    {
+      question: "How do we sign up?",
+      answer: "Sign-up links will be made available on our Linktree!",
+    },
+    {
+      question:
+        "Must all hackathon participants be physically present at the venue?",
+      answer:
+        "All hackathon participants are required to be physically present at COM3 MPSH (please inform us if any of your members will not be able to attend).",
+    },
+  ],
+  afterEventParty: [
+    {
+      question: "How do we sign up?",
+      answer:
+        "Sign-up links will be made available on our Linktree! This is a by-invite-only event.",
+    },
+    {
+      question: "Who is Eligible?",
+      answer:
+        "Only finalists, sponsors, society members and workshop speakers will be eligible to join.",
+    },
+    {
+      question: "What can I expect?",
+      answer:
+        "Networking sessions, free food and a nice night-out to round off the event!",
+    },
+    {
+      question: "Any fees?",
+      answer: "Entirely free! Just remember to RSVP once the link goes live!",
+    },
   ],
 };
 
