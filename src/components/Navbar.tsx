@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar: React.FC = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState<"workshops" | "faq" | null>(null);
@@ -45,6 +46,16 @@ const Navbar: React.FC = () => {
       <nav ref={navRef} className="bg-nav-backround shadow-md w-full">
         <div className="w-full lg:px-8">
           <div className="flex items-center justify-between h-16  w-full">
+              {/* Logo/Image */}
+            <div className="flex items-center ml-5">
+              <Image
+                className="m-5"
+                alt="logo"
+                src={"/navbar-logo.png"}
+                width={110} // Adjust dimensions if necessary
+                height={60}
+              />
+            </div>
             {/* Hamburger Button for Mobile */}
             <button
               className="block md:hidden px-4 text-white focus:outline-none"
