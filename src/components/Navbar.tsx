@@ -86,16 +86,29 @@ const Navbar: React.FC = () => {
             <div className={"md:flex hidden md:justify-between md:items-center w-full"}>
               {/* Logo/Image (now links to Home) */}
               <div className="flex items-center ml-5">
-                <Link href="/" passHref>
-                  <Image
-                    className="m-5 cursor-pointer"
-                    alt="logo"
-                    src={"/navbar-logo.png"}
-                    width={110} // Adjust dimensions if necessary
-                    height={60}
-                  />
-                </Link>
-              </div>
+  <Link href="/" passHref>
+    <div className="flex items-center cursor-pointer">
+      {/* First Image */}
+      <Image
+        className="mr-1" // Reduced margin-right
+        alt="logo"
+        src="/navbar-logo.png"
+        width={110} // Adjust dimensions if necessary
+        height={60}
+      />
+      {/* Divider Line */}
+      <div className="w-px h-10 bg-white mx-1" /> {/* Reduced margin-left and margin-right */}
+      {/* Second Image */}
+      <Image
+        className="ml-1" // Reduced margin-left
+        alt="logo"
+        src="/HomeLogoFull.png"
+        width={110} // Adjust dimensions if necessary
+        height={60}
+      />
+    </div>
+  </Link>
+</div>
               <Link href="/about" className="text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                 ABOUT
               </Link>
