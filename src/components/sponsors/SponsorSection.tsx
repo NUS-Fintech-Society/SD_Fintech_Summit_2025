@@ -8,17 +8,17 @@ interface Sponsor {
 }
 
 interface SponsorSectionProps {
-	title: 'Platinum' | 'Gold' | 'Silver';
+	title: 'Gold' | 'Platinum'  | 'Silver';
 	sponsors: Sponsor[];
 }
 
 const SponsorSection: React.FC<SponsorSectionProps> = ({ title, sponsors }) => {
 	const bubbleColor = (title: SponsorSectionProps['title']) => {
 		switch (title) {
-			case "Platinum":
-				return "bg-gradient-to-l from-[#BBA9A9] to-[#F9F0F0]";
 			case "Gold":
 				return "bg-gradient-to-l from-[#CDA538] to-[#F3C443]";
+			case "Platinum":
+				return "bg-gradient-to-l from-[#BBA9A9] to-[#F9F0F0]";
 			case "Silver":
 				return "bg-gradient-to-l from-[#5D5D5D] to-[#AFAFAF]";
 			default:

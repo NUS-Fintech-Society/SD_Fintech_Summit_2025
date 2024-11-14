@@ -2,15 +2,15 @@ import React from 'react';
 import SponsorSection from '../../components/sponsors/SponsorSection';
 
 const Sponsors = () => {
-    const platinumSponsors = [
-        { name: "Northern Trust", imgSrc: "./sponsors/Northern Trust.png", link: "https://www.northerntrust.com" },
-        { name: "Ripple", imgSrc: "./sponsors/Ripple.png", link: "https://ripple.com" }
-    ];
     const goldSponsors = [
         { name: "Jane Street", imgSrc: "./sponsors/Jane Street.png", link: "https://www.janestreet.com" },
         { name: "Metacamp", imgSrc: "./sponsors/Metacamp.png", link: "https://metacamp.so" },
         { name: "Moledao", imgSrc: "./sponsors/Moledao.png", link: "https://moledao.io" },
         { name: "Flowdesk", imgSrc: "./sponsors/Flowdesk.png", link: "https://flowdesk.co" }
+    ];
+    const platinumSponsors = [
+        { name: "Northern Trust", imgSrc: "./sponsors/Northern Trust.png", link: "https://www.northerntrust.com" },
+        { name: "Ripple", imgSrc: "./sponsors/Ripple.png", link: "https://ripple.com" }
     ];
     const silverSponsors = [
         { name: "Dethings", imgSrc: "./sponsors/DeThings.png", link: "https://dethings.com" },
@@ -24,10 +24,10 @@ const Sponsors = () => {
             <h1 className="text-3xl font-bold text-center text-[#D9DFA1] mb-16">Our Sponsors</h1>
             <div className="flex flex-col lg:flex-row gap-10 justify-center">
                 <div className="flex-grow">
-                    <SponsorSection title="Platinum" sponsors={platinumSponsors} />
+                    <SponsorSection title="Gold" sponsors={goldSponsors} />
                 </div>
                 <div className="flex-grow">
-                    <SponsorSection title="Gold" sponsors={goldSponsors} />
+                    <SponsorSection title="Platinum" sponsors={platinumSponsors} />
                 </div>
                 <div className="flex-grow">
                     <SponsorSection title="Silver" sponsors={silverSponsors} />
