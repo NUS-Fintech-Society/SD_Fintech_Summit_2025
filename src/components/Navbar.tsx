@@ -46,16 +46,6 @@ const Navbar: React.FC = () => {
       <nav ref={navRef} className="bg-nav-backround shadow-md w-full">
         <div className="w-full lg:px-8">
           <div className="flex items-center justify-between h-16  w-full">
-              {/* Logo/Image */}
-            <div className="flex items-center ml-5">
-              <Image
-                className="m-5"
-                alt="logo"
-                src={"/navbar-logo.png"}
-                width={110} // Adjust dimensions if necessary
-                height={60}
-              />
-            </div>
             {/* Hamburger Button for Mobile */}
             <button
               className="block md:hidden px-4 text-white focus:outline-none"
@@ -94,10 +84,31 @@ const Navbar: React.FC = () => {
               )}
             </button>
             <div className={"md:flex hidden md:justify-between md:items-center w-full"}>
-              <Link href="/" className="text-white font-bold text-lg hover:text-gray-200 md:ml-[5%]" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
-                HOME
-              </Link>
-
+              {/* Logo/Image (now links to Home) */}
+              <div className="flex items-center ml-5">
+  <Link href="/" passHref>
+    <div className="flex items-center cursor-pointer">
+      {/* First Image */}
+      <Image
+        className="mr-1" // Reduced margin-right
+        alt="logo"
+        src="/navbar-logo.png"
+        width={110} // Adjust dimensions if necessary
+        height={60}
+      />
+      {/* Divider Line */}
+      <div className="w-px h-10 bg-white mx-1" /> {/* Reduced margin-left and margin-right */}
+      {/* Second Image */}
+      <Image
+        className="ml-1" // Reduced margin-left
+        alt="logo"
+        src="/HomeLogoFull.png"
+        width={110} // Adjust dimensions if necessary
+        height={60}
+      />
+    </div>
+  </Link>
+</div>
               <Link href="/about" className="text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                 ABOUT
               </Link>
