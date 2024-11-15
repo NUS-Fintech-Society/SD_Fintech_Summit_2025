@@ -15,8 +15,8 @@ const HomePage: React.FC = () => {
         <ProblemStatement />
         <Bounty />
         <Prizes />
-        <DownloadButton />
         <Timeline />
+        <DownloadButton />
       </div>
     </div>
   );
