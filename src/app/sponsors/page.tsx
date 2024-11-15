@@ -21,7 +21,11 @@ const Sponsors = () => {
 
     return (
         <div className="p-8 bg-custom-background min-h-screen">
-            <h1 className="text-3xl font-bold text-center text-[#D9DFA1] mb-16">Our Sponsors</h1>
+            <h1 className="text-2xl text-center text-white font-bold mb-8">
+                <div className="[text-shadow:_4px_3px_0px_#000000] text-5xl mb-4"> {/* Add margin-bottom (mb-4) */}
+                    OUR SPONSORS
+                </div>
+            </h1>
             <div className="flex flex-col lg:flex-row gap-10 justify-center">
                 <div className="flex-grow">
                     <SponsorSection title="Platinum" sponsors={platinumSponsors} />
