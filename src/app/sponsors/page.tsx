@@ -27,13 +27,13 @@ const Sponsors = () => {
                 </div>
             </h1>
             <div className="flex flex-col lg:flex-row gap-10 justify-center">
-                <div className="flex-grow">
+                <div className="flex-grow order-2 lg:order-1">
                     <SponsorSection title="Gold" sponsors={goldSponsors} />
                 </div>
-                <div className="flex-grow">
+                <div className="flex-grow order-1 lg:order-2">
                     <SponsorSection title="Platinum" sponsors={platinumSponsors} />
                 </div>
-                <div className="flex-grow">
+                <div className="flex-grow order-3">
                     <SponsorSection title="Silver" sponsors={silverSponsors} />
                 </div>
             </div>
