@@ -3,8 +3,8 @@ import React from 'react';
 import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
 const prizes = [
-  { place: '2nd', amount: '$2,000' },
-  { place: '1st', amount: '$4,000' },
+  { place: '2nd', amount: '$3,000' },
+  { place: '1st', amount: '$5,000' },
   { place: '3rd', amount: '$1,000' },
 ];
 

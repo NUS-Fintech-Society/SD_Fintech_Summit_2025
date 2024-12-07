@@ -1,4 +1,3 @@
-// Bounty.tsx
 "use client";
 
 import React, { useState } from 'react';
@@ -10,11 +9,11 @@ interface Challenge {
 }
 
 const challenges: Challenge[] = [
-  { title: 'Security and Transparency', description: 'Enhance transparency, traceability, and security in business operations using blockchain.' },
-  { title: 'Life and Health', description: 'Promote healthy living through blockchain for secure medical records and pharmaceutical traceability.' },
-  { title: 'Sustainable Development', description: 'Support clean energy, carbon tracking, and sustainable supply chains using blockchain.' },
-  { title: 'Global Education Development', description: 'Facilitate quality education with blockchain for credential verification and resource sharing.' },
-  { title: 'Reducing Inequality', description: 'Reduce resource disparity using blockchain for financial inclusion and transparent social welfare.' },
+  { title: 'Security and Transparency', description: 'Enhance the transparency, traceability, and security of business operations using blockchain technology.' },
+  { title: 'Life and Health', description: 'Promote healthy living for everyone using blockchain technology.' },
+  { title: 'Sustainable Development', description: 'Promote sustainable development, including the use of clean energy, addressing environmental issues, and achieving economic sustainable growth.' },
+  { title: 'Global Education Development', description: 'Promote inclusive and equitable quality education, ensuring lifelong learning opportunities for all.' },
+  { title: 'Reducing Inequality', description: 'Reduce disparities in resource distribution within and among countries, addressing issues of inequality in the traditional world.' },
 ];
 
 const Bounty: React.FC = () => {
@@ -27,10 +26,10 @@ const Bounty: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-4 mb-4">
       <CircleCapsuleBanner title="Bounty" />
-      <div className="bg-[#0B2858] text-[#FFA200] rounded-lg p-6 w-full max-w-md mx-auto shadow-lg">
+      <div className="bg-[#0B2858] text-[#FFA200] rounded-lg p-6 w-full max-w-xl mx-auto shadow-lg">
         <h2 className="text-2xl font-bold mb-4 text-center text-[#FFA200]">BGA Track</h2>
         <p className="text-center text-[#FFA200] mb-4">
-          Projects aligning with the UN's 17 Sustainable Development Goals are eligible for the BGA Track.
+          Projects that meet the UN's 17 Sustainable Development Goals can be considered to meet the requirements of this track. The BGA Track is designed to find and reward innovative projects that utilise blockchain technology to solve critical global problems, and the following are some of the representative project categories that meet the requirements of the BGA Track, but are not limited to just that:
         </p>
 
         <div className="w-full space-y-2">
@@ -51,6 +50,18 @@ const Bounty: React.FC = () => {
               )}
             </div>
           ))}
+        </div>
+
+        {/* Button for more info */}
+        <div className="mt-6 text-center">
+          <a
+            href="https://docs.google.com/document/d/1GI_Ku9lhANsJ43DnesVp2xxaZ5hXf-NzshEiVlw3feI/edit"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            Click here for more
+          </a>
         </div>
       </div>
     </div>

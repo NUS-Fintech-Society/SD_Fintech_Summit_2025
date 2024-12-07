@@ -1,27 +1,28 @@
 "use client"
 
 import React, { useState } from "react";
-import { IWorkShop } from "./types";
+import { IPanels } from "./types";
 
-interface WorkshopItemProps extends IWorkShop {
-  secondImageSrc?: string; // Optional second image source
+interface PanelItemProps extends IPanels {
+  speakerImages?: string[]; // Optional speaker images for toggling
 }
 
-const WorkshopItem: React.FC<WorkshopItemProps> = ({
+const PanelItem: React.FC<PanelItemProps> = ({
   date,
   time,
-  imageSrc = "https://via.placeholder.com/150",
-  description = "Insert brief description here",
-  imageAlt = "Workshop Image",
-  secondImageSrc, // Second image source
+  topic,
+  description,
+  speakerImages = [],
+  imageAlt = "Panel Image",
 }) => {
-  // State to track which image is displayed
-  const [currentImage, setCurrentImage] = useState(imageSrc);
+  // State to track the current speaker image displayed
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  // Function to switch between the two images
+  // Function to cycle through speaker images
   const toggleImage = () => {
-    if (secondImageSrc) {
-      setCurrentImage(currentImage === imageSrc ? secondImageSrc : imageSrc);
+    if (speakerImages.length > 1) {
+      const nextIndex = (currentImageIndex + 1) % speakerImages.length;
+      setCurrentImageIndex(nextIndex);
     }
   };
 
@@ -34,16 +35,22 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
       <div style={{ borderRadius: 50 }} className="w-40 overflow-hidden">
         <img
           style={{ height: "100%", padding: 0, marginRight: 20 }}
-          src={currentImage}
+          src={speakerImages[currentImageIndex]}
           alt={imageAlt}
           className="object-cover w-full h-full cursor-pointer" // Added cursor pointer for click interaction
           onClick={toggleImage} // Clicking the image will switch it
         />
       </div>
 
-      {/* Description and Date/Time */}
+      {/* Panel topic and description */}
       <div className="flex-1">
-        <p className="text-gray-900 font-semibold m-4">{description}</p>
+        {/* Panel Topic */}
+        <p className="text-gray-900 font-semibold text-xl m-4">{topic}</p>
+
+        {/* Panel Description */}
+        <p className="text-gray-700 font-semibold m-4">{description}</p>
+
+        {/* Date and Time */}
         <div
           style={{ borderRadius: 50 }}
           className="m-4 flex flex-col sm:flex-row justify-between items-center mt-2 bg-gray-100 p-4"
@@ -56,4 +63,4 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   );
 };
 
-export default WorkshopItem;
+export default PanelItem;

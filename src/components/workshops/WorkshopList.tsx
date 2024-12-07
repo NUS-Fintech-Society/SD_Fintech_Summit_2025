@@ -17,6 +17,7 @@ const WorkshopList: React.FC<WorkshopListProps> = ({ workshops }) => {
           imageAlt={workshop.imageAlt}
           imageSrc={workshop.imageSrc}
           description={workshop.description}
+          secondImageSrc={workshop.secondImageSrc} // Pass secondImageSrc if available
         />
       ))}
     </div>
