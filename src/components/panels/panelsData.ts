@@ -1,4 +1,6 @@
 // panelsMockData with topic and description separated
+import { IPanels } from './types'; // Make sure the path to types.ts is correct
+
 export const panelsMockData: Record<string, IPanels[]> = {
   day1: [
     {
