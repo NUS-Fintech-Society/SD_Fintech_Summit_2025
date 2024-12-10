@@ -16,7 +16,7 @@ const HomePage: React.FC = () => {
         <Bounty />
         <Prizes />
         <Timeline />
-        <DownloadButton />
+        {/* TODO: add <DownloadButton /> */}
       </div>
     </div>
   );
