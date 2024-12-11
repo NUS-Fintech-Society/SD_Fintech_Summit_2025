@@ -86,12 +86,12 @@ export const mockData: Record<
     },
     {
       question: "Where do we submit our files for the hackathon?",
-      answer: "TBC",
+      answer: "You may submit your files via our devpost. (https://nus-fintech-summit-2025.devpost.com/)",
     },
     {
       question: "What is the judging criteria and submission requirements?",
       answer:
-        "Refer to the Hackathon Details pages for the rubrics for each round.",
+        "You may refer to our devpost. (https://nus-fintech-summit-2025.devpost.com/)",
     },
     {
       question: "What does it cost?",

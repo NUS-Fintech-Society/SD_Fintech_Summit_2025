@@ -6,6 +6,7 @@ import Bounty from "@/components/home/Bounty";
 import Prizes from "@/components/home/Prizes";
 import Timeline from "@/components/home/Timeline";
 import DownloadButton from "@/components/home/DownloadButton";
+import Joining from "@/components/home/Joining";
 
 const HomePage: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const HomePage: React.FC = () => {
         <Bounty />
         <Prizes />
         <Timeline />
+        <Joining />
         {/* TODO: add <DownloadButton /> */}
       </div>
     </div>
