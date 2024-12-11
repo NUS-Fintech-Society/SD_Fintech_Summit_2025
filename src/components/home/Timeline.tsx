@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
 type TimelineItemType = {
   title: string;
@@ -25,15 +25,9 @@ const timelineItems: TimelineItemType[] = [
     link: "/",
   },
   {
-    title: "Workshop and Hackathon Registration Closes",
-    description:
-      "",
-    date: "31 DEC",
-  },
-  {
     title: "Opening Ceremony (Physical)",
     description:
-      "• Welcoming speech \n • Introduce the summit \n • Keynote speeches",
+      "• Problem Statement Discussion \n • Introduce the summit \n • Panel Discussion",
     date: "06 JAN",
   },
   {
@@ -43,7 +37,7 @@ const timelineItems: TimelineItemType[] = [
     date: "01 JAN to 07 JAN",
   },
   {
-    title: "Online Workshops",
+    title: "Workshops",
     description:
       "",
     date: "02 JAN to 16 JAN",
@@ -137,14 +131,6 @@ const Timeline = () => {
                   {item.title}
                 </div>
                 <div className="text-slate-500 mb-4 whitespace-pre-line">{item.description}</div>
-                {item.link && (
-                   <a
-                   href={item.link}
-                   className="bg-[#F5A202] text-[#102B71] py-2 px-4 rounded-full font-medium"
-                 >
-                   More
-                 </a>
-                )}
               </div>
             </div>
           ))}

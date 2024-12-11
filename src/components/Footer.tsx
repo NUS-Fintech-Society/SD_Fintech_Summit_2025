@@ -13,12 +13,6 @@ const Footer: React.FC = () => {
           <a href="https://www.instagram.com/nusfintech" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
             <img src="/icons/instagram.svg" alt="Instagram" className="h-7 hover:opacity-60" />
           </a>
-          <a href="https://www.facebook.com/NUSfintech" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <img src="/icons/facebook.svg" alt="Facebook" className="h-7 hover:opacity-60" />
-          </a>
-          <a href="https://www.youtube.com/@nusfintechsociety" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <img src="/icons/youtube.svg" alt="YouTube" className="h-7 hover:opacity-60" />
-          </a>
           <a href="https://t.me/nusfintechpublic" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
             <img src="/icons/telegram.svg" alt="Telegram" className="h-6 hover:opacity-60" />
           </a>
