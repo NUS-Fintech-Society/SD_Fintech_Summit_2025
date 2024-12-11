@@ -28,7 +28,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       imageAlt: "CitiBank",
       imageSrc: "./CitiBank.png",
       description: "CitiBank",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdqqeBMqaq3l2nQA8sy2XgK5hkYdk3FTzBzwLCt8LydH-lsqA/viewform", // CitiBank link
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeb9hh7ZzZ5ZaECyadM-Vio_BW5vv3aE04YMd1TolVmbl0xAA/viewform", // CitiBank link
     },
   ],
   
