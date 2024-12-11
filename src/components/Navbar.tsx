@@ -139,7 +139,7 @@ const Navbar: React.FC = () => {
               </Link>
 
               <Link 
-                href="/" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd39bxGCe-lOdfiNURKSpNqzjzzRg-yy-OI87hCOLHimiofSg/closedform"
                 className="text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 md:mr-[5%]"
                 style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
               >
@@ -219,7 +219,7 @@ const Navbar: React.FC = () => {
               </Link>
 
               <Link 
-                href="/" 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd39bxGCe-lOdfiNURKSpNqzjzzRg-yy-OI87hCOLHimiofSg/closedform"
                 className="text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 md:mr-[5%]"
                 style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
               >

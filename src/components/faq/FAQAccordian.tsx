@@ -70,12 +70,6 @@ export const mockData: Record<
         "NUS Fintech Summit 2025 is open to all tertiary students across the globe.",
     },
     {
-      question:
-        "Is there anything to take note of if I am participating from overseas?",
-      answer:
-        "If you qualify as a finalist, you (and your team) will be required to be present physically for our Demo Day.",
-    },
-    {
       question: "Are there any requirements for the hackathon team formation?",
       answer:
         "The team should consist of 2-5 members from any tertiary institute. Please appoint a Team Lead to be the main point of contact throughout the hackathon.",
@@ -83,12 +77,12 @@ export const mockData: Record<
     {
       question: "How do we sign up for the hackathon?",
       answer:
-        "Sign-ups will be made available on 20th December 2024. Each team should only sign up once and appoint a team lead. If any changes arise, please email our team at nusfintech.ops@gmail.com.",
+        "Sign-ups will be made available on 12th December 2024. Each team should only sign up once and appoint a team lead. If any changes arise, please email our team at nusfintech.ops@gmail.com.",
     },
     {
       question: "Will the hackathon be conducted remotely?",
       answer:
-        "The hackathon will be conducted remotely with the exception of opening ceremony and demo day. Overseas finalists are strongly encouraged to be present physically.",
+        "The hackathon will be conducted remotely with the exception of opening ceremony and demo day. International finalists are encouraged, if possible, to be present physically.",
     },
     {
       question: "Where do we submit our files for the hackathon?",
@@ -144,7 +138,7 @@ export const mockData: Record<
       question:
         "Must all hackathon participants be physically present at the venue?",
       answer:
-        "All hackathon participants are required to be physically present at COM3 MPSH (please inform us if any of your members will not be able to attend).",
+        "All hackathon finalists are required to be physically present to present their projecsts. If there are any difficulties, especially for international participants, do kindly let us know by emailing nusfintech.ops@gmail.com",
     },
   ],
   afterEventParty: [

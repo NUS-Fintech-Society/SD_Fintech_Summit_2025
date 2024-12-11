@@ -1,10 +1,11 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { IWorkShop } from "./types";
 
 interface WorkshopItemProps extends IWorkShop {
-  secondImageSrc?: string; // Optional second image source
+  secondImageSrc?: string;
+  registrationLink?: string; // Link for registration
 }
 
 const WorkshopItem: React.FC<WorkshopItemProps> = ({
@@ -13,7 +14,8 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   imageSrc = "https://via.placeholder.com/150",
   description = "Insert brief description here",
   imageAlt = "Workshop Image",
-  secondImageSrc, // Second image source
+  secondImageSrc, 
+  registrationLink, // Registration link
 }) => {
   // State to track which image is displayed
   const [currentImage, setCurrentImage] = useState(imageSrc);
@@ -36,8 +38,8 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
           style={{ height: "100%", padding: 0, marginRight: 20 }}
           src={currentImage}
           alt={imageAlt}
-          className="object-cover w-full h-full cursor-pointer" // Added cursor pointer for click interaction
-          onClick={toggleImage} // Clicking the image will switch it
+          className="object-cover w-full h-full cursor-pointer" 
+          onClick={toggleImage} 
         />
       </div>
 
@@ -51,6 +53,28 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
           <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
           <p className="text-gray-700 font-bold">Time: {time}</p>
         </div>
+        {/* Register Button with more space */}
+        {registrationLink && (
+          <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+            <button
+              style={{
+                width: 200,
+                height: 60,
+                backgroundColor: "#4470ba",
+                color: "white",
+                fontWeight: "600",
+                borderRadius: "9999px",
+                padding: "8px 16px",
+                marginTop: "20px",  // Added margin-top to add space above the button
+                marginBottom: "20px", // Added margin-bottom to add space below the button
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#365a96")}
+              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4470ba")}
+            >
+              REGISTER
+            </button>
+          </a>
+        )}
       </div>
     </div>
   );

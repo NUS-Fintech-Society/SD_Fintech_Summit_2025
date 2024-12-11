@@ -38,11 +38,6 @@ export default async function Page({ params }: { params: { day: string } }) {
           <PanelList panels={panels} />
         </>
       )}
-
-      {/* Register Button Section */}
-      <div className="flex justify-center mt-8">
-        <RegisterButton />
-      </div>
     </div>
   );
 }

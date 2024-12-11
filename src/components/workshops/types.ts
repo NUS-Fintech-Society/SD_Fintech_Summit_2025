@@ -5,4 +5,5 @@ export interface IWorkShop {
   imageSrc?: string; // The primary image URL
   secondImageSrc?: string; // The optional second image URL (for toggling images)
   description: string; // Description of the workshop or panel
+  registrationLink?: string; // Link to the registration form (optional)
 }
