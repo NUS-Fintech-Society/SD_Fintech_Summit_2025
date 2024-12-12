@@ -8,7 +8,7 @@ interface Sponsor {
 }
 
 interface SponsorSectionProps {
-	title: 'Gold' | 'Platinum'  | 'Silver';
+	title: 'Gold' | 'Platinum' | 'Silver' | 'Community Partners';
 	sponsors: Sponsor[];
 }
 
@@ -21,6 +21,8 @@ const SponsorSection: React.FC<SponsorSectionProps> = ({ title, sponsors }) => {
 				return "bg-gradient-to-l from-[#BBA9A9] to-[#F9F0F0]";
 			case "Silver":
 				return "bg-gradient-to-l from-[#5D5D5D] to-[#AFAFAF]";
+			case "Community Partners":
+				return "bg-gradient-to-l from-[#306060] to-[#58A6A6]"; 
 			default:
 				return "bg-gradient-to-l from-gray-400 to-gray-200";
 		}

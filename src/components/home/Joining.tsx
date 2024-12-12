@@ -17,6 +17,9 @@ const Joining: React.FC = () => {
         <p className="text-center text-[#FFA200] mb-4">
           After creating a devpost account, they may visit the <a href="https://nus-fintech-summit-2025.devpost.com/" target="_blank" rel="noopener noreferrer" className="underline">hackathon devpost site</a> where there will be an option to join the hackathon. For more details and general help, participants may refer to the <a href="https://help.devpost.com/hc/en-us/categories/360001298552-Hackathon-Participants" target="_blank" rel="noopener noreferrer" className="underline">devpost help centre</a> for hackathon participants.
         </p>
+        <p>
+          5 finalists per problem statement will be chosen and they will present their prototypes to our sponsor judges on 17th January. 
+        </p>
       </div>
     </div>
   );
