@@ -45,7 +45,7 @@ const Header: React.FC = () => {
         <Countdown />
 
         <p className="text-md md:text-lg font-semibold text-[#BBC49A] text-center mb-8">
-          12th Dec - 17th Jan @ National University of Singapore
+          15th Dec - 17th Jan @ National University of Singapore
         </p>
       </div>
     </div>

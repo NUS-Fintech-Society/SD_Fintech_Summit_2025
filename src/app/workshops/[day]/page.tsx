@@ -43,11 +43,12 @@ export default async function Page({ params }: { params: { day: string } }) {
 }
 
 function getDayString(day: string): string {
-  // Check if the string starts with 'day' and the rest is a number
-  if (day.startsWith("day") && !isNaN(+day.slice(3))) {
-    return `DAY ${day.slice(3)}`;
-  }
-  return day;
+  const dayMappings: Record<string, string> = {
+    "day1": "13 Jan 2025",
+    "day2": "14 Jan 2025",
+    "day3": "15 Jan 2025"
+  };
+  return dayMappings[day] || day;
 }
 
 async function getWorkshopsAsync(day: string): Promise<IWorkShop[]> {

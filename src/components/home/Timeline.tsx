@@ -14,7 +14,7 @@ const timelineItems: TimelineItemType[] = [
     title: "Workshop and Hackathon Registration Opens",
     description:
       "Hackathon Problem Statement Announcement",
-    date: "12 DEC",
+    date: "15 DEC",
     link: "/",
   },
   {
@@ -25,36 +25,31 @@ const timelineItems: TimelineItemType[] = [
     link: "/",
   },
   {
+    title: "Closing Date for Registration",
+    description:
+      "Registration is no longer open",
+    date: "5 JAN",
+    link: "/",
+  },
+  {
     title: "Opening Ceremony (Physical)",
     description:
       "• Problem Statement Discussion \n • Introduce the summit \n • Panel Discussion",
     date: "06 JAN",
   },
   {
-    title: "Ideation Judging & Results",
+    title: "Closing Date for Submission",
     description:
-      "Release of results by 2359",
-    date: "01 JAN to 07 JAN",
+      "No more submissions will be considered",
+    date: "10 JAN",
+    link: "/",
   },
   {
     title: "Workshops",
     description:
       "",
-    date: "02 JAN to 16 JAN",
+    date: "13 JAN to 15 JAN",
     link: "/",
-  },
-  {
-    title: "Prototyping",
-    description:
-      "• Semi-finalists work on developing prototypes \n • Submission Deadline: 12 JAN 2025, 2359",
-    date: "07 JAN to 12 JAN",
-    link: "/",
-  },
-  {
-    title: "Prototype Judging",
-    description:
-      "• Judging of submitted prototypes \n • Prototyping Result Release: 14 JAN 2025, 1200",
-    date: "13 JAN to 14 JAN",
   },
   {
     title: "Hacker House: Preparation for Finalists",

@@ -18,11 +18,16 @@ const Sponsors = () => {
         { name: "Bank of America", imgSrc: "./sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
         { name: "Coingecko", imgSrc: "./sponsors/CoinGecko.png", link: "https://www.coingecko.com" }
     ];
+    const communityPartners = [
+        { name: "Gigdao", imgSrc: "./sponsors/Gigdao.png", link: "https://gigdao.io" },
+        { name: "Seegrowth", imgSrc: "./sponsors/Seegrowth.png", link: "https://seegrowth.framer.website/" },
+        { name: "Builderdao", imgSrc: "./sponsors/Builderdao.png", link: "https://buidlerdao.xyz/" }
+    ];
 
     return (
         <div className="p-8 bg-custom-background min-h-screen">
             <h1 className="text-2xl text-center text-white font-bold mb-8">
-                <div className="[text-shadow:_4px_3px_0px_#000000] text-5xl mb-4"> {/* Add margin-bottom (mb-4) */}
+                <div className="[text-shadow:_4px_3px_0px_#000000] text-5xl mb-4">
                     OUR SPONSORS
                 </div>
             </h1>
@@ -33,8 +38,9 @@ const Sponsors = () => {
                 <div className="flex-grow order-1 lg:order-2">
                     <SponsorSection title="Platinum" sponsors={platinumSponsors} />
                 </div>
-                <div className="flex-grow order-3">
+                <div className="flex-grow order-3 lg:flex lg:flex-row lg:gap-10">
                     <SponsorSection title="Silver" sponsors={silverSponsors} />
+                    <SponsorSection title="Community Partners" sponsors={communityPartners} />
                 </div>
             </div>
         </div>
