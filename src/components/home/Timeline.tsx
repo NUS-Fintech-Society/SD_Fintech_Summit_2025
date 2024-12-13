@@ -28,7 +28,7 @@ const timelineItems: TimelineItemType[] = [
     title: "Closing Date for Registration",
     description:
       "Registration is no longer open",
-    date: "5 JAN",
+    date: "05 JAN",
     link: "/",
   },
   {
