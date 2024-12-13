@@ -190,19 +190,19 @@ const Navbar: React.FC = () => {
                       href="/workshops/day1"
                       onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
-                      Day 1
+                      13 Jan 2025
                     </Link>
                     <Link
                       href="/workshops/day2"
                       onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
-                      Day 2
+                      14 Jan 2025
                     </Link>
                     <Link
                       href="/workshops/day3"
                       onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
-                      Day 3
+                      15 Jan 2025
                     </Link>
                   </div>
                 </div>
