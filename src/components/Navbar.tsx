@@ -123,9 +123,9 @@ const Navbar: React.FC = () => {
                 </button>
                 {isDropdownOpen === "workshops" && (
                   <div className="absolute left-0 top-full mt-1 w-40 bg-blue-400 text-white rounded-lg shadow-lg z-50">
-                    <Link href="/workshops/day1" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>Day 1</Link>
-                    <Link href="/workshops/day2" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>Day 2</Link>
-                    <Link href="/workshops/day3" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>Day 3</Link>
+                    <Link href="/workshops/day1" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>13 Jan 2025</Link>
+                    <Link href="/workshops/day2" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>14 Jan 2025</Link>
+                    <Link href="/workshops/day3" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>15 Jan 2025</Link>
                   </div>
                 )}
               </div>
