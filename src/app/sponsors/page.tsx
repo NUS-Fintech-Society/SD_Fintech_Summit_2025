@@ -40,6 +40,8 @@ const Sponsors = () => {
                 </div>
                 <div className="flex-grow order-3 lg:flex lg:flex-row lg:gap-10">
                     <SponsorSection title="Silver" sponsors={silverSponsors} />
+                </div>
+                <div className="flex-grow order-4 lg:flex lg:flex-row lg:gap-10">
                     <SponsorSection title="Community Partners" sponsors={communityPartners} />
                 </div>
             </div>

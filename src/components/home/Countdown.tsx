@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 
 const Countdown: React.FC = () => {
   const calculateTimeLeft = () => {
-    const summitDate = new Date("2025-01-06T00:00:00");
+    const summitDate = new Date("2024-12-15T00:00:00");
     const currentTime = new Date();
     const difference = summitDate.getTime() - currentTime.getTime();
 
