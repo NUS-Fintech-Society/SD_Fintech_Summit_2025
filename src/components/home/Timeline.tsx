@@ -21,7 +21,7 @@ const timelineItems: TimelineItemType[] = [
     title: "Hackathon Ideation",
     description:
       "• Participants start coding and ideation \n • Submission Deadline: 31 Dec 2024, 2359",
-    date: "12 DEC to 31 DEC",
+    date: "15 DEC to 31 DEC",
     link: "/",
   },
   {
