@@ -165,3 +165,4 @@ export const mockData: Record<
 };
 
 export default FaqAccordion;
+
