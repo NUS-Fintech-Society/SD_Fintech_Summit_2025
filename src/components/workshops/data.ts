@@ -3,66 +3,51 @@ import { IWorkShop } from "./types";
 export const workshopsMockData: Record<string, IWorkShop[]> = {
   day1: [
     {
-      date: "2025-01-01",
-      time: "10:00 AM",
+      date: "2025-01-13",
+      time: "10:30 AM",
       imageAlt: "Workshop 1",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+1",
-      description: "Introduction to Web Development",
+      imageSrc: "./Metacamp.png",
+      description: "Metacamp",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdNwHG5RAWMmyAO5AXEbPGSn0wUCqfAVRnWOp6rCeg0o7jErA/viewform", // CitiBank link
     },
     {
-      date: "2025-01-01",
-      time: "2:00 PM",
+      date: "2025-01-13",
+      time: "10:30 AM",
       imageAlt: "Workshop 2",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+2",
-      description: "Advanced JavaScript Techniques",
+      imageSrc: "./Nvdia.png",
+      secondImageSrc: "./EmbeddedLLM.png",
+      description: "Nvidia X Embedded LLM",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc1AJxMFKfvM1BGgF7WF9fS588SSsnfNnRMQRcSxNyc3oSIOA/viewform", // Embedded LLM X Nvidia link
     },
   ],
+  
   day2: [
     {
-      date: "2025-01-02",
-      time: "10:00 AM",
-      imageAlt: "Workshop A",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+A",
-      description: "Building RESTful APIs with Node.js",
-    },
-    {
-      date: "2025-01-02",
-      time: "2:00 PM",
-      imageAlt: "Workshop B",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+B",
-      description: "Introduction to Docker and Containers",
+      date: "2025-01-14",
+      time: "1:00 PM",
+      imageAlt: "CitiBank",
+      imageSrc: "./CitiBank.png",
+      description: "CitiBank",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeb9hh7ZzZ5ZaECyadM-Vio_BW5vv3aE04YMd1TolVmbl0xAA/viewform", // CitiBank link
     },
   ],
+  
   day3: [
     {
-      date: "2025-01-03",
-      time: "10:00 AM",
-      imageAlt: "Workshop C",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+C",
-      description: "Getting Started with Machine Learning",
-    },
-    {
-      date: "2025-01-03",
+      date: "2025-01-15",
       time: "2:00 PM",
-      imageAlt: "Workshop D",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+D",
-      description: "Deploying Applications to the Cloud",
-    },
-  ],
-  day4: [
-    {
-      date: "2025-01-04",
-      time: "10:00 AM",
-      imageAlt: "Workshop E",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+E",
-      description: "Mastering CSS with Tailwind",
+      imageAlt: "StashAway",
+      imageSrc: "./StashAway.png",
+      description: "StashAway",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdqqeBMqaq3l2nQA8sy2XgK5hkYdk3FTzBzwLCt8LydH-lsqA/viewform", // StashAway link
     },
     {
-      date: "2025-01-04",
+      date: "2025-01-15",
       time: "2:00 PM",
-      imageAlt: "Workshop F",
-      imageSrc: "https://via.placeholder.com/150?text=Workshop+F",
-      description: "Serverless Architecture with AWS Lambda",
-    },
-  ],
+      imageAlt: "Talos",
+      imageSrc: "./Talos.png",
+      description: "Talos",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdgbLcbIuHNNREqgPbmU__pX4k_-srfSZhBExnjG7ryb0dQXQ/viewform", // Talos link
+    }
+  ]
 };

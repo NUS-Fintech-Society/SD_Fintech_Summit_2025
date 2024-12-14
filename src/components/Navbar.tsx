@@ -5,9 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Navbar: React.FC = () => {
-  const [isDropdownOpen, setIsDropdownOpen] = useState<
-    "workshops" | "faq" | null
-  >(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState<"workshops" | "faq" | null>(null);
   const [hoverDelay, setHoverDelay] = useState<number | null>(null);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to control hamburger menu
 
@@ -48,13 +46,6 @@ const Navbar: React.FC = () => {
       <nav ref={navRef} className="bg-nav-backround shadow-md w-full">
         <div className="w-full lg:px-8">
           <div className="flex items-center justify-between h-16  w-full">
-            <Image
-              className="m-5"
-              alt="logo"
-              src={"/navbar-logo.png"}
-              width={110}
-              height={60}
-            />
             {/* Hamburger Button for Mobile */}
             <button
               className="block md:hidden px-4 text-white focus:outline-none"
@@ -92,101 +83,64 @@ const Navbar: React.FC = () => {
                 </svg>
               )}
             </button>
-            <div
-              className={
-                "md:flex hidden md:justify-between md:items-center w-full"
-              }
-            >
-              <Link
-                href="/"
-                className="text-white font-bold text-lg hover:text-gray-200 md:ml-[5%]"
-                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-              >
-                HOME
-              </Link>
-
-              <Link
-                href="/about"
-                className="text-white font-bold text-lg hover:text-gray-200"
-                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-              >
+            <div className={"md:flex hidden md:justify-between md:items-center w-full"}>
+              {/* Logo/Image (now links to Home) */}
+              <div className="flex items-center ml-5">
+  <Link href="/" passHref>
+    <div className="flex items-center cursor-pointer">
+      {/* First Image */}
+      <Image
+        className="mr-1" // Reduced margin-right
+        alt="logo"
+        src="/navbar-logo.png"
+        width={110} // Adjust dimensions if necessary
+        height={60}
+      />
+      {/* Divider Line */}
+      <div className="w-px h-10 bg-white mx-1" /> {/* Reduced margin-left and margin-right */}
+      {/* Second Image */}
+      <Image
+        className="ml-1" // Reduced margin-left
+        alt="logo"
+        src="/HomeLogoFull.png"
+        width={110} // Adjust dimensions if necessary
+        height={60}
+      />
+    </div>
+  </Link>
+</div>
+              <Link href="/about" className="text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                 ABOUT
               </Link>
 
               {/* Workshops Dropdown */}
-              <div
-                className="relative flex items-center"
-                onMouseEnter={() => handleMouseEnter("workshops")}
-                onMouseLeave={handleMouseLeave}
-              >
-                <button
-                  className="text-white font-bold text-lg flex items-center hover:text-gray-200"
-                  style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-                >
+              <div className="relative flex items-center" onMouseEnter={() => handleMouseEnter("workshops")} onMouseLeave={handleMouseLeave}>
+                <button className="text-white font-bold text-lg flex items-center hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                   WORKSHOPS
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className={`w-4 h-4 ml-2 transform ${
-                      isDropdownOpen === "workshops" ? "rotate-180" : "rotate-0"
-                    } transition-transform duration-200`}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    />
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className={`w-4 h-4 ml-2 transform ${isDropdownOpen === "workshops" ? "rotate-180" : "rotate-0"} transition-transform duration-200`}>
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
                 {isDropdownOpen === "workshops" && (
                   <div className="absolute left-0 top-full mt-1 w-40 bg-blue-400 text-white rounded-lg shadow-lg z-50">
-                    <Link
-                      href="/workshops/day1"
-                      className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
-                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-                    >
-                      Day 1
-                    </Link>
-                    <Link
-                      href="/workshops/day2"
-                      className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
-                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-                    >
-                      Day 2
-                    </Link>
-                    <Link
-                      href="/workshops/day3"
-                      className="block px-4 py-2 hover:bg-nav-backround rounded-lg"
-                      style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-                    >
-                      Day 3
-                    </Link>
+                    <Link href="/workshops/day1" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>13 Jan 2025</Link>
+                    <Link href="/workshops/day2" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>14 Jan 2025</Link>
+                    <Link href="/workshops/day3" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>15 Jan 2025</Link>
                   </div>
                 )}
               </div>
 
-              <Link
-                href="/sponsors"
-                className="text-white font-bold text-lg hover:text-gray-200"
-                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-              >
+              <Link href="/sponsors" className="text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                 SPONSORS
               </Link>
 
-              <Link
-                href="/faq"
-                className="text-white font-bold text-lg hover:text-gray-200"
-                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
-              >
+              <Link href="/faq" className="text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
                 FAQ
               </Link>
 
-              <Link
-                href="/"
-                className="text-white font-bold text-lg hover:text-gray-200 md:mr-[5%]"
+              <Link 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd39bxGCe-lOdfiNURKSpNqzjzzRg-yy-OI87hCOLHimiofSg/closedform"
+                className="text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 md:mr-[5%]"
                 style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
               >
                 REGISTRATION
@@ -196,32 +150,20 @@ const Navbar: React.FC = () => {
 
           {/* Mobile Menu */}
           {isMenuOpen && (
-            <div
-              className="md:hidden block py-4 bg-nav-backround text-white z-50 w-full"
-              ref={menuRef}
-            >
-              <Link
-                href="/"
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-2 hover:text-gray-200"
-              >
+            <div className="md:hidden block py-4 bg-nav-backround text-white z-50 w-full"
+              ref={menuRef}>
+              <Link href="/" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 HOME
               </Link>
-              <Link
-                href="/about"
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-2 hover:text-gray-200"
-              >
+              <Link href="/about" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 ABOUT
               </Link>
               <div className="relative flex flex-col items-start w-full">
                 <button
                   className="flex items-center w-full px-4 py-2"
-                  onClick={() =>
-                    setIsDropdownOpen(
-                      isDropdownOpen === "workshops" ? null : "workshops"
-                    )
-                  } // Toggle dropdown on button click
+                  onClick={() => setIsDropdownOpen(isDropdownOpen === "workshops" ? null : "workshops")} // Toggle dropdown on button click
                   onMouseEnter={() => handleMouseEnter("workshops")} // Open on hover
                 >
                   WORKSHOPS
@@ -231,76 +173,61 @@ const Navbar: React.FC = () => {
                     viewBox="0 0 24 24"
                     strokeWidth={2}
                     stroke="currentColor"
-                    className={`w-4 h-4 ml-2 transform ${
-                      isDropdownOpen === "workshops" ? "rotate-180" : "rotate-0"
-                    } transition-transform duration-200`}
+                    className={`w-4 h-4 ml-2 transform ${isDropdownOpen === "workshops" ? "rotate-180" : "rotate-0"
+                      } transition-transform duration-200`}
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M19 9l-7 7-7-7"
-                    />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
 
                 {/* Dropdown menu */}
                 <div
                   onMouseLeave={handleMouseLeave} // Close when mouse leaves the dropdown
-                  className={`w-full bg-blue-400 ${
-                    isDropdownOpen === "workshops" ? "block" : "hidden"
-                  }`} // Control visibility
+                  className={`w-full bg-blue-400 ${isDropdownOpen === "workshops" ? "block" : "hidden"}`} // Control visibility
                 >
                   <div className=" text-white z-50 w-full">
                     <Link
                       href="/workshops/day1"
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
-                      Day 1
+                      13 Jan 2025
                     </Link>
                     <Link
                       href="/workshops/day2"
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
-                      Day 2
+                      14 Jan 2025
                     </Link>
                     <Link
                       href="/workshops/day3"
-                      onClick={() => setIsMenuOpen(false)}
-                      className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                      onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                     >
-                      Day 3
+                      15 Jan 2025
                     </Link>
                   </div>
                 </div>
               </div>
 
-              <Link
-                href="/sponsors"
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-2 hover:text-gray-200"
-              >
+              <Link href="/sponsors" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 SPONSORS
               </Link>
 
-              <Link
-                href="/faq"
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-2 hover:text-gray-200"
-              >
+              <Link href="/faq" 
+              onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
                 FAQ
               </Link>
 
-              <Link
-                href="/"
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-4 py-2 hover:text-gray-200"
+              <Link 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSd39bxGCe-lOdfiNURKSpNqzjzzRg-yy-OI87hCOLHimiofSg/closedform"
+                className="text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 md:mr-[5%]"
+                style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
               >
                 REGISTRATION
               </Link>
             </div>
           )}
+
         </div>
       </nav>
     </>

@@ -18,7 +18,7 @@ const Header: React.FC = () => {
         />
       </div>
 
-      <div className="w-full lg:w-[55%] text-center lg:text-left">
+      <div className="w-full  text-center lg:text-left">
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl text-center font-semibold text-[#D9DFA1] drop-shadow-md">
           NUS FINTECH
         </h1>
@@ -44,12 +44,8 @@ const Header: React.FC = () => {
 
         <Countdown />
 
-        <div className="bg-[#D9D9D9] opacity-20 text-center text-white text-md md:text-xl font-semibold py-2 px-4 rounded-md mb-4">
-          Theme: PLACEHOLDER FOR THEME
-        </div>
-
         <p className="text-md md:text-lg font-semibold text-[#BBC49A] text-center mb-8">
-          6th Jan - 17th Jan @ National University of Singapore
+          15th Dec - 17th Jan @ National University of Singapore
         </p>
       </div>
     </div>
