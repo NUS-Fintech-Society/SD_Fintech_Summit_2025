@@ -1,6 +1,6 @@
 import "./globals.css";
 export const metadata = {
-  title: "NUS Fintech Summit",
+  title: "NUS Fintech Summit 2025",
 };
 
 import Navbar from "@/components/Navbar";
