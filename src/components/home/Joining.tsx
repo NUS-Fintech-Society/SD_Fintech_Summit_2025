@@ -20,6 +20,24 @@ const Joining: React.FC = () => {
         <p className="text-center text-[#FFA200] mb-4">
           5 finalists per problem statement will be chosen and they will present their prototypes to our sponsor judges on 17th January. 
         </p>
+        <div className="flex flex-col md:flex-row gap-4 md:gap-10 justify-center items-center">
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSeIfq9bn5cTPOfEACMvv3Ubd2ZCK7u0_nIi1wUuqRqQtGVy-w/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            Registration Form
+          </a>
+          <a
+            href="https://nus-fintech-summit-2025.devpost.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            DevPost
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -3,9 +3,9 @@ import React from 'react';
 import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
 const prizes = [
-  { place: '2nd', amount: '$3,000' },
-  { place: '1st', amount: '$5,000' },
-  { place: '3rd', amount: '$1,000' },
+  { place: '2nd', amount: '$3,000', bg_color: "bg-[#AFAFAF]", text_color: "text-[#AFAFAF]" },
+  { place: '1st', amount: '$5,000', bg_color: "bg-[#CDA538]", text_color: "text-[#CDA538]" },
+  { place: '3rd', amount: '$1,000', bg_color: "bg-[#A46628]", text_color: "text-[#A46628]" },
 ];
 
 const Prizes: React.FC = () => {
@@ -24,12 +24,12 @@ const Prizes: React.FC = () => {
             } w-full sm:w-1/3 bg-gradient-to-b from-[#0C2859] to-[#0C2859]`}
           >
             {/* Place Label */}
-            <div className="absolute -top-5 bg-gradient-to-r from-[#FFA200] to-[#FFA200] text-[#0C2859] text-lg font-semibold px-4 py-2 rounded-full shadow-md">
+            <div className={`absolute -top-5 ${prize.bg_color} text-[#0C2859] text-lg font-semibold px-4 py-2 rounded-full shadow-md`}>
               {prize.place}
             </div>
 
             {/* Prize Amount */}
-            <div className="text-[#FFA200] text-3xl font-bold mt-6">
+            <div className={`${prize.text_color} text-3xl font-bold mt-6`}>
               {prize.amount}
             </div>
           </div>
