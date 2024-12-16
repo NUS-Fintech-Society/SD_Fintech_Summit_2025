@@ -26,11 +26,22 @@ const Bounty: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-4 mb-4">
       <CircleCapsuleBanner title="Bounty" />
-      <div className="bg-[#0B2858] text-[#FFA200] rounded-lg p-6 w-full max-w-xl mx-auto shadow-lg">
-        <h2 className="text-2xl font-bold mb-4 text-center text-[#FFA200]">BGA Track</h2>
-        <p className="text-center text-[#FFA200] mb-4">
+      <div className="bg-[#0B2858] text-[#FFA200] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md">
+          <div className="flex flex-col lg:flex-row items-center lg:items-center space-y-4 lg:space-y-0 lg:space-x-6">
+          <img
+            src="/sponsors/BlockchainGoodWhite.png" 
+            alt="Blockchain for Good Logo"
+            className="w-36 h-36 object-contain" // Significantly increased size
+          />
+          <div>
+          <h2 className="text-2xl font-bold mb-4 text-center lg:text-left text-[#FFA200]">BGA Track</h2>
+            <p className="text-justify text-[#FFA200] mb-4">
           Projects that meet the UN's 17 Sustainable Development Goals can be considered to meet the requirements of this track. The BGA Track is designed to find and reward innovative projects that utilise blockchain technology to solve critical global problems, and the following are some of the representative project categories that meet the requirements of the BGA Track, but are not limited to just that:
         </p>
+          </div>
+        </div>
+
+
 
         <div className="w-full space-y-2">
           {challenges.map((challenge, index) => (
@@ -64,7 +75,7 @@ const Bounty: React.FC = () => {
           </a>
         </div>
       </div>
-    </div>
+      </div>
   );
 };
 

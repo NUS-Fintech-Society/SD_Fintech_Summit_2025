@@ -47,6 +47,30 @@ const Navbar: React.FC = () => {
         <div className="w-full lg:px-8">
           <div className="flex items-center justify-between h-16  w-full">
             {/* Hamburger Button for Mobile */}
+            <div className="flex items-center ml-5  md:hidden">
+              <Link href="/" passHref>
+                <div className="flex items-center cursor-pointer">
+                  {/* First Image */}
+                  <Image
+                    className="mr-1" // Reduced margin-right
+                    alt="logo"
+                    src="/navbar-logo.png"
+                    width={110} // Adjust dimensions if necessary
+                    height={60}
+                  />
+                  {/* Divider Line */}
+                  <div className="w-px h-10 bg-white mx-1" /> {/* Reduced margin-left and margin-right */}
+                  {/* Second Image */}
+                  <Image
+                    className="ml-1" // Reduced margin-left
+                    alt="logo"
+                    src="/HomeLogoFull.png"
+                    width={110} // Adjust dimensions if necessary
+                    height={60}
+                  />
+                </div>
+              </Link>
+            </div>
             <button
               className="block md:hidden px-4 text-white focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}

@@ -7,9 +7,9 @@ const Joining: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-4 mb-4">
       <CircleCapsuleBanner title="Joining the Hackathon" />
-      <div className="bg-[#0B2858] text-[#FFA200] rounded-lg p-6 w-full max-w-xl mx-auto shadow-lg">
+      <div className="bg-[#0B2858] text-[#FFA200] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md">
         <p className="text-center text-[#FFA200] mb-4">
-          Teams will register under one of the two problem statement tracks. Successful teams will pass on to the prototyping stage and then the finals. The BGA bounty is an add-on prize for finalist teams. If your project best meets the criteria of the bounty, you can win the bounty on top of the prize from the main problem statement.
+          Teams will register under one of the two problem statement tracks. Successful teams will pass on to the finals on 17th January 2025. The BGA bounty is an add-on prize for finalist teams. If your project best meets the criteria of the bounty, you can win the bounty on top of the prize from the main problem statement.
         </p>
         <p className="text-center text-[#FFA200] mb-4">
           To participate, you may form teams of 1-5 members. Register by firstly filling up the <a href="https://forms.gle/HcVEtSDBVZikaqHY9" target="_blank" rel="noopener noreferrer" className="underline">Registration Form</a>. Additionally, you are required to create a devpost account at <a href="https://devpost.com" target="_blank" rel="noopener noreferrer" className="underline">devpost.com</a>. Kindly ensure that your account is created with the same email in the registration form for verification purposes.
