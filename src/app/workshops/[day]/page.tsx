@@ -22,22 +22,10 @@ export default async function Page({ params }: { params: { day: string } }) {
       {/* Workshops Section */}
       <h2 className="text-xl text-center text-white font-semibold mb-4">
         <div className="[text-shadow:_4px_3px_0px_#000000] text-3xl">
-          WORKSHOPS
+          {day == "day1" ? "PHYSICAL WORKSHOPS" : "VIRTUAL WORKSHOPS"} {/* Show the dynamic workshop type */}
         </div>
       </h2>
       <WorkshopList workshops={workshops} />
-
-      {/* Conditionally render panels only for Day 1 */}
-      {day === "day1" && (
-        <>
-          <h2 className="text-xl text-center text-white font-semibold mt-12 mb-6">
-            <div className="[text-shadow:_4px_3px_0px_#000000] text-3xl">
-              PANELS
-            </div>
-          </h2>
-          <PanelList panels={panels} />
-        </>
-      )}
     </div>
   );
 }
