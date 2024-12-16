@@ -7,7 +7,7 @@ const ProblemStatement: React.FC = () => {
       <DoubleCapsuleBanner title="Problem Statements" />
       <div className="flex flex-col items-center justify-center space-y-3 w-full mt-12">
         {/* Stylish box for problem statements */}
-        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex items-center space-x-6">
+        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:items-center space-y-4 lg:space-y-0 lg:space-x-6">
           <img
             src="/sponsors/Northern Trust.png" 
             alt="Northern Trust Logo"
@@ -18,7 +18,7 @@ const ProblemStatement: React.FC = () => {
             With the integration of blockchain in financial services, compliance and risk management processes need a fresh approach. Traditional models may not suffice, and AI-driven compliance solutions can help automate and streamline risk assessments while remaining in line with regulations.
           </div>
         </div>
-        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex items-center space-x-6">
+        <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:items-center space-y-4 lg:space-y-0 lg:space-x-6">
           <img
             src="/sponsors/Ripple.png" 
             alt="Ripple Logo"

@@ -11,50 +11,50 @@ type TimelineItemType = {
 
 const timelineItems: TimelineItemType[] = [
   {
-    title: "Workshop and Hackathon Registration Opens",
+    title: "Hackathon Starts",
     description:
       "Hackathon Problem Statement Announcement",
-    date: "15 DEC",
+    date: "15 DEC 2024",
     link: "/",
   },
   {
-    title: "Closing Date for Registration",
+    title: "Hackathon Registration Deadline",
     description:
       "",
-    date: "05 JAN",
+    date: "05 JAN 2025",
     link: "/",
   },
   {
     title: "Opening Ceremony (Physical)",
     description:
       "• Problem Statement Discussion \n • Introduce the summit \n • Panel Discussion",
-    date: "06 JAN",
+    date: "06 JAN 2025",
   },
   {
-    title: "Closing Date for Submission",
+    title: "Hackathon Submissions Deadline",
     description:
       "",
-    date: "10 JAN",
+    date: "10 JAN 2025",
     link: "/",
   },
   {
     title: "Physical Workshops",
     description:
       "",
-    date: "13 JAN",
+    date: "13 JAN 2025",
     link: "/",
   },
   {
     title: "Online Workshops",
     description:
       "",
-    date: "14 JAN to 16 JAN",
+    date: "14 - 16 JAN 2025",
   },
   {
-    title: "Finalist Demo Day (Physical)",
+    title: "Physical Demo Day",
     description:
       "",
-    date: "17 JAN",
+    date: "17 JAN 2025",
   },
 ];
 
