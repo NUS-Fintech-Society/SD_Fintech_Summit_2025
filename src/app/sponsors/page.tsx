@@ -3,12 +3,12 @@ import SponsorSection from '../../components/sponsors/SponsorSection';
 
 const Sponsors = () => {
     const goldSponsors = [
-        { name: "Coinbase", imgSrc: "./sponsors/Coinbase.png", link: "https://www.coinbase.com" },
+        { name: "Blockchain for Good", imgSrc: "./sponsors/BlockchainGood.png", link: "https://singaporeblockchain.org/blockchainforgood/" },
+        { name: "Coinbase", imgSrc: "./sponsors/Coinbase.svg", link: "https://www.coinbase.com" },
         { name: "EmbeddedLLM", imgSrc: "./sponsors/EmbeddedLLM.svg", link: "https://embeddedllm.com" },
         { name: "Flowdesk", imgSrc: "./sponsors/Flowdesk.png", link: "https://flowdesk.co" },
         { name: "Jane Street", imgSrc: "./sponsors/Jane Street.png", link: "https://www.janestreet.com" },
         { name: "Metacamp", imgSrc: "./sponsors/Metacamp.png", link: "https://metacamp.so" },
-        { name: "Moledao", imgSrc: "./sponsors/Moledao.png", link: "https://moledao.io" },
         { name: "Nvidia", imgSrc: "./sponsors/Nvidia.png", link: "https://www.nvidia.com" }
     ];
     const platinumSponsors = [
@@ -26,6 +26,7 @@ const Sponsors = () => {
     const communityPartners = [
         { name: "Builderdao", imgSrc: "./sponsors/Builderdao.png", link: "https://buidlerdao.xyz/" },
         { name: "Gigdao", imgSrc: "./sponsors/Gigdao.png", link: "https://gigdao.io" },
+        { name: "Moledao", imgSrc: "./sponsors/Moledao.png", link: "https://moledao.io" },
         { name: "Seegrowth", imgSrc: "./sponsors/Seegrowth.png", link: "https://seegrowth.framer.website/" },
     ];
 

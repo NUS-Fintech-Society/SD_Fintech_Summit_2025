@@ -55,7 +55,7 @@ export const mockData: Record<
     {
       question: "How do we sign up?",
       answer:
-        "You can sign up via the link on our Linktree which will go live on 12 December 2024. Attendance is compulsory to all Hackathon participants.",
+        "You can indicate your attendance in the registration form. All teams are required to attend, except for international teams (i.e. Teams not based in Singapore).",
     },
     {
       question: "What can I expect for the opening ceremony?",
@@ -72,7 +72,7 @@ export const mockData: Record<
     {
       question: "Are there any requirements for the hackathon team formation?",
       answer:
-        "The team should consist of 2-5 members from any tertiary institute. Please appoint a Team Lead to be the main point of contact throughout the hackathon.",
+        "The team should consist of 1-5 members from any tertiary institute. Please appoint a Team Lead to be the main point of contact throughout the hackathon.",
     },
     {
       question: "How do we sign up for the hackathon?",
@@ -106,11 +106,11 @@ export const mockData: Record<
   workshops: [
     {
       question: "How do we sign-up?",
-      answer: "You may retrieve the workshop signup links from our LinkTree.",
+      answer: "You may signup for the workshops through the Workshops tab on this website.",
     },
     {
       question: "Can I attend the workshop virtually?",
-      answer: "Workshops held on 12th to 16th January 2025 are virtual.",
+      answer: "Workshops held on 13th January 2025 are physical. Workshops held on 14th - 15th January 2025 are virtual.",
     },
     {
       question: "Are the workshops compulsory for hackathon participants?",

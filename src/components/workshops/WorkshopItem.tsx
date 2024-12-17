@@ -14,6 +14,8 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   imageSrc = "https://via.placeholder.com/150",
   description = "Insert brief description here",
   imageAlt = "Workshop Image",
+  title,
+  company,
   secondImageSrc, 
   registrationLink, // Registration link
 }) => {
@@ -28,31 +30,27 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   };
 
   return (
-    <div
-      style={{ borderRadius: 50 }}
-      className="flex items-center bg-white shadow-[10px_8px_0px_0px_rgba(0,_0,_0)] relative overflow-hidden mb-10 max-w-[90%] lg:max-w-[70%] mx-auto"
-    >
-      {/* Left-side image */}
-      <div style={{ borderRadius: 50 }} className="w-40 overflow-hidden">
-        <img
-          style={{ height: "100%", padding: 0, marginRight: 20 }}
-          src={currentImage}
-          alt={imageAlt}
-          className="object-cover w-full h-full cursor-pointer" 
-          onClick={toggleImage} 
-        />
+    <div className="flex flex-col items-center justify-center space-y-3 w-full mt-12">
+    <div className="bg-white w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:justify-between space-y-4 lg:space-y-0 lg:space-x-6">
+      <div className="flex flex-col lg:flex-row items-center gap-4">
+        <div className="flex lg:mr-4 lg:ml-2 flex-row lg:flex-col">
+      <img
+        src={currentImage}
+        alt={imageAlt}
+        className="w-36 h-36 object-contain" // Significantly increased size
+      />
+      {secondImageSrc && <img
+        src={secondImageSrc}
+        alt={imageAlt}
+        className="w-36 h-36 object-contain" // Significantly increased size
+      />}
       </div>
-
-      {/* Description and Date/Time */}
-      <div className="flex-1">
-        <p className="text-gray-900 font-semibold m-4">{description}</p>
-        <div
-          style={{ borderRadius: 50 }}
-          className="m-4 flex flex-col sm:flex-row justify-between items-center mt-2 bg-gray-100 p-4"
-        >
-          <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
-          <p className="text-gray-700 font-bold">Time: {time}</p>
-        </div>
+      <div>
+        <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">{title}</h3>
+        <strong>{company}</strong><br /><br />
+        <p>{description}</p> <br />
+        <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
+        <p className="text-gray-700 font-bold">Time: {time}</p>
         {/* Register Button with more space */}
         {registrationLink && (
           <a href={registrationLink} target="_blank" rel="noopener noreferrer">
@@ -75,7 +73,9 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
             </button>
           </a>
         )}
-      </div>
+    </div>
+    </div>
+    </div>
     </div>
   );
 };
