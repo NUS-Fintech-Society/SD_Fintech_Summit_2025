@@ -45,9 +45,9 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
         className="w-36 h-36 object-contain" // Significantly increased size
       />}
       </div>
-      <div>
+      <div className="flex flex-col items-center lg:items-start">
         <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">{title}</h3>
-        <strong>{company}</strong><br /><br />
+        <strong>{company}</strong><br />
         <p>{description}</p> <br />
         <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
         <p className="text-gray-700 font-bold">Time: {time}</p>
