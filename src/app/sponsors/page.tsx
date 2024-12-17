@@ -3,7 +3,7 @@ import SponsorSection from '../../components/sponsors/SponsorSection';
 
 const Sponsors = () => {
     const goldSponsors = [
-        { name: "Blockchain for Good", imgSrc: "/sponsors/BlockchainGood.png", link: "https://singaporeblockchain.org/blockchainforgood/" },
+        { name: "Blockchain for Good", imgSrc: "/sponsors/BlockchainGood.png", link: "https://www.blockchainforgood.xyz" },
         { name: "Coinbase", imgSrc: "/sponsors/Coinbase.svg", link: "https://www.coinbase.com" },
         { name: "EmbeddedLLM", imgSrc: "/sponsors/EmbeddedLLM.svg", link: "https://embeddedllm.com" },
         { name: "Flowdesk", imgSrc: "/sponsors/Flowdesk.png", link: "https://flowdesk.co" },
