@@ -1,4 +1,3 @@
-// Prizes.tsx
 import React from 'react';
 import DoubleCapsuleBanner from '../ui/home/DoubleCapsuleBanner';
 
@@ -34,6 +33,11 @@ const Prizes: React.FC = () => {
             </div>
           </div>
         ))}
+      </div>
+
+      {/* Additional Prizes Text */}
+      <div className="text-center mt-8 text-lg font-semibold text-[#FFA200]">
+        We also have up to <span className="text-[#CDA538] font-bold">2000 USDT</span> worth of prizes for the bounty!
       </div>
     </div>
   );

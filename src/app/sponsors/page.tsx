@@ -16,7 +16,7 @@ const Sponsors = () => {
         { name: "Ripple", imgSrc: "./sponsors/Ripple.png", link: "https://ripple.com" }
     ];
     const silverSponsors = [
-        // { name: "Bank of America", imgSrc: "./sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
+        { name: "Bank of America", imgSrc: "./sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
         { name: "Coingecko", imgSrc: "./sponsors/CoinGecko.png", link: "https://www.coingecko.com" },
         { name: "Dethings", imgSrc: "./sponsors/DeThings.png", link: "https://dethings.com" },
         { name: "eFinancialCareers", imgSrc: "./sponsors/eFinancialCareers.svg", link: "https://www.efinancialcareers.sg" },
