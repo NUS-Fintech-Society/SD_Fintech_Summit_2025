@@ -37,6 +37,14 @@ const Joining: React.FC = () => {
           >
             DevPost
           </a>
+          <a
+            href="https://t.me/+I-SUnalMtPE4NzE1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            Telegram Channel
+          </a>
         </div>
       </div>
     </div>
