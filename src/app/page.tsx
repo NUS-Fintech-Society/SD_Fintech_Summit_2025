@@ -15,10 +15,15 @@ const HomePage: React.FC = () => {
       <div className="container mx-auto p-8">
         <Banner />
         <Header />
+        <div id="problem-statement" />
         <ProblemStatement />
+        <div id="bounty" />
         <Bounty />
+        <div id="prizes" />
         <Prizes />
+        <div id="timeline" />
         <Timeline />
+        <div id="joining" />
         <Joining />
         {/* TODO: add <DownloadButton /> */}
       </div>
