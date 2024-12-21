@@ -7,9 +7,9 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       time: "10:00 AM",
       imageAlt: "Workshop 1",
       imageSrc: "/workshops/Metacamp.png",
-      title: "Metacamp",
+      title: "Web3 Basics Workshop",
       company: "Metacamp",
-      description: "Details to be announced",
+      description: "A beginner-friendly introduction to blockchain, dApps, smart contracts, decentralization, NFTs, and crypto wallets. Take the first step into the world of blockchain and Web3 with this hands-on session to explore and engage with Web3 tools!",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdNwHG5RAWMmyAO5AXEbPGSn0wUCqfAVRnWOp6rCeg0o7jErA/viewform", // CitiBank link
     },
     {
