@@ -14,8 +14,12 @@ const ProblemStatement: React.FC = () => {
             className="w-36 h-36 object-contain" // Significantly increased size
           />
           <div>
-            <strong>How can AI and machine learning be applied to enhance compliance and risk management for financial institutions leveraging blockchain?</strong><br /><br />
-            With the integration of blockchain in financial services, compliance and risk management processes need a fresh approach. Traditional models may not suffice, and AI-driven compliance solutions can help automate and streamline risk assessments while remaining in line with regulations.
+            <p className="font-bold text-justify">
+              How can AI and machine learning be applied to enhance compliance and risk management for financial institutions leveraging blockchain?
+            </p><br />
+            <p className="text-justify">
+              With the integration of blockchain in financial services, compliance and risk management processes need a fresh approach. Traditional models may not suffice, and AI-driven compliance solutions can help automate and streamline risk assessments while remaining in line with regulations.
+            </p>
           </div>
         </div>
         <div className="bg-[#D9D9D9] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:items-center space-y-4 lg:space-y-0 lg:space-x-6">
@@ -25,8 +29,12 @@ const ProblemStatement: React.FC = () => {
             className="w-36 h-36 object-contain" // Significantly increased size
           />
           <div>
-            <strong>Develop fintech applications leveraging XRPL and its new EVM Sidechain to minimize traditional costs associated with such ventures. These applications may encompass areas like insurance, wealth management, cross-border payments, lending, and more.</strong><br /><br />
+          <p className="font-bold text-justify">
+          Develop fintech applications leveraging XRPL and its new EVM Sidechain to minimize traditional costs associated with such ventures. These applications may encompass areas like insurance, wealth management, cross-border payments, lending, and more.
+            </p><br />
+            <p className="text-justify">
             Additionally, explore solutions in emerging fields such as regulatory technology (RegTech), digital identity, sustainable finance, and risk management. XRPL’s efficiency and the EVM Sidechain’s programmability offer a powerful combination to deliver innovative, scalable, and cost-effective fintech solutions.
+            </p>
           </div>
         </div>
       </div>
