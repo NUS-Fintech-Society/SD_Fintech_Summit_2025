@@ -3,31 +3,31 @@ import SponsorSection from '../../components/sponsors/SponsorSection';
 
 const Sponsors = () => {
     const goldSponsors = [
-        { name: "Blockchain for Good", imgSrc: "./sponsors/BlockchainGood.png", link: "https://singaporeblockchain.org/blockchainforgood/" },
-        { name: "Coinbase", imgSrc: "./sponsors/Coinbase.svg", link: "https://www.coinbase.com" },
-        { name: "EmbeddedLLM", imgSrc: "./sponsors/EmbeddedLLM.svg", link: "https://embeddedllm.com" },
-        { name: "Flowdesk", imgSrc: "./sponsors/Flowdesk.png", link: "https://flowdesk.co" },
-        { name: "Jane Street", imgSrc: "./sponsors/Jane Street.png", link: "https://www.janestreet.com" },
-        { name: "Metacamp", imgSrc: "./sponsors/Metacamp.png", link: "https://metacamp.so" },
-        { name: "Nvidia", imgSrc: "./sponsors/Nvidia.png", link: "https://www.nvidia.com" }
+        { name: "Blockchain for Good", imgSrc: "/sponsors/BlockchainGood.png", link: "https://www.blockchainforgood.xyz" },
+        { name: "Coinbase", imgSrc: "/sponsors/Coinbase.svg", link: "https://www.coinbase.com" },
+        { name: "EmbeddedLLM", imgSrc: "/sponsors/EmbeddedLLM.svg", link: "https://embeddedllm.com" },
+        { name: "Flowdesk", imgSrc: "/sponsors/Flowdesk.png", link: "https://flowdesk.co" },
+        { name: "Jane Street", imgSrc: "/sponsors/Jane Street.png", link: "https://www.janestreet.com" },
+        { name: "Metacamp", imgSrc: "/sponsors/Metacamp.png", link: "https://metacamp.so" },
+        { name: "Nvidia", imgSrc: "/sponsors/Nvidia.png", link: "https://www.nvidia.com" }
     ];
     const platinumSponsors = [
-        { name: "Northern Trust", imgSrc: "./sponsors/Northern Trust.png", link: "https://www.northerntrust.com" },
-        { name: "Ripple", imgSrc: "./sponsors/Ripple.png", link: "https://ripple.com" }
+        { name: "Northern Trust", imgSrc: "/sponsors/Northern Trust.png", link: "https://www.northerntrust.com" },
+        { name: "Ripple", imgSrc: "/sponsors/Ripple.png", link: "https://ripple.com" }
     ];
     const silverSponsors = [
-        { name: "Bank of America", imgSrc: "./sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
-        { name: "Coingecko", imgSrc: "./sponsors/CoinGecko.png", link: "https://www.coingecko.com" },
-        { name: "Dethings", imgSrc: "./sponsors/DeThings.png", link: "https://dethings.com" },
-        { name: "eFinancialCareers", imgSrc: "./sponsors/eFinancialCareers.svg", link: "https://www.efinancialcareers.sg" },
-        { name: "Taisu Ventures", imgSrc: "./sponsors/Taisu.png", link: "https://www.taisu.io" },
+        { name: "Bank of America", imgSrc: "/sponsors/Bank of America.png", link: "https://www.bankofamerica.com" },
+        { name: "Coingecko", imgSrc: "/sponsors/CoinGecko.png", link: "https://www.coingecko.com" },
+        { name: "Dethings", imgSrc: "/sponsors/DeThings.png", link: "https://dethings.com" },
+        { name: "eFinancialCareers", imgSrc: "/sponsors/eFinancialCareers.png", link: "https://www.efinancialcareers.sg" },
+        { name: "Taisu Ventures", imgSrc: "/sponsors/Taisu.png", link: "https://www.taisu.io" },
 
     ];
     const communityPartners = [
-        { name: "Builderdao", imgSrc: "./sponsors/Builderdao.png", link: "https://buidlerdao.xyz/" },
-        { name: "Gigdao", imgSrc: "./sponsors/Gigdao.png", link: "https://gigdao.io" },
-        { name: "Moledao", imgSrc: "./sponsors/Moledao.png", link: "https://moledao.io" },
-        { name: "Seegrowth", imgSrc: "./sponsors/Seegrowth.png", link: "https://seegrowth.framer.website/" },
+        { name: "Builderdao", imgSrc: "/sponsors/Builderdao.png", link: "https://buidlerdao.xyz/" },
+        { name: "Gigdao", imgSrc: "/sponsors/Gigdao.png", link: "https://gigdao.io" },
+        { name: "Moledao", imgSrc: "/sponsors/Moledao.png", link: "https://moledao.io" },
+        { name: "Seegrowth", imgSrc: "/sponsors/Seegrowth.png", link: "https://seegrowth.framer.website/" },
     ];
 
     return (
