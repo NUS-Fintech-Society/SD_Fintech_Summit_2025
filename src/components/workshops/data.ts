@@ -6,58 +6,61 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       date: "13 Jan 2025",
       time: "10:00 AM",
       imageAlt: "Workshop 1",
-      imageSrc: "/workshops/Metacamp.png",
-      title: "Web3 Basics Workshop",
+      imageSrc: "./Metacamp.png",
+      title: "Web 3: Summarised",
       company: "Metacamp",
-      description: "A beginner-friendly introduction to blockchain, dApps, smart contracts, decentralization, NFTs, and crypto wallets. Take the first step into the world of blockchain and Web3 with this hands-on session to explore and engage with Web3 tools!",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdNwHG5RAWMmyAO5AXEbPGSn0wUCqfAVRnWOp6rCeg0o7jErA/viewform", // CitiBank link
+      description: "Here is WEB 3: SUMMARISED, from DeFi protocols to Crypto to NFTs and everything in between, CONDENSED in a physical workshop!",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdNwHG5RAWMmyAO5AXEbPGSn0wUCqfAVRnWOp6rCeg0o7jErA/viewform",
+      speakers: ["Jonas Chen, Co-Founder"],
     },
     {
       date: "13 Jan 2025",
       time: "2:00 PM",
       imageAlt: "Workshop 2",
-      imageSrc: "/workshops/Nvdia.png",
-      secondImageSrc: "/workshops/EmbeddedLLM.svg",
+      imageSrc: "./Nvdia.png",
+      secondImageSrc: "./EmbeddedLLM.svg",
       title: "Creating Applications Using LLM, Vision & Text Models",
       company: "Nvidia X EmbeddedLLM",
-      description: "Learn to build AI-powered apps in mere hours! ",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc1AJxMFKfvM1BGgF7WF9fS588SSsnfNnRMQRcSxNyc3oSIOA/viewform", // Embedded LLM X Nvidia link
+      description: "Learn to build AI-powered apps in mere hours!",
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc1AJxMFKfvM1BGgF7WF9fS588SSsnfNnRMQRcSxNyc3oSIOA/viewform",
+      speakers: ["Rachael Tan, Startup & Developer Growth Manager, APS", "Muhammad Usman, AI Integration Lead"],
     },
   ],
-  
   day2: [
     {
       date: "14 Jan 2025",
       time: "1:00 PM",
       imageAlt: "CitiBank",
-      imageSrc: "/workshops/CitiBank.png",
-      title: "CitiBank",
+      imageSrc: "./CitiBank.png",
+      title: "State of Blockchain use cases in banks",
       company: "CitiBank",
       description: "Details to be announced",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeb9hh7ZzZ5ZaECyadM-Vio_BW5vv3aE04YMd1TolVmbl0xAA/viewform", // CitiBank link
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeb9hh7ZzZ5ZaECyadM-Vio_BW5vv3aE04YMd1TolVmbl0xAA/viewform",
+      speakers: ["Choo Haiping, Digital Assets"],
     },
   ],
-  
   day3: [
     {
       date: "15 Jan 2025",
       time: "2:00 PM",
       imageAlt: "StashAway",
-      imageSrc: "/workshops/StashAway.png",
-      title: "From idea to impact: Building a fintech business",
+      imageSrc: "./StashAway.png",
+      title: "From idea to impact: Building a Fintech Business",
       company: "StashAway",
       description: "Details to be announced",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdqqeBMqaq3l2nQA8sy2XgK5hkYdk3FTzBzwLCt8LydH-lsqA/viewform", // StashAway link
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdqqeBMqaq3l2nQA8sy2XgK5hkYdk3FTzBzwLCt8LydH-lsqA/viewform",
+      speakers: ["Alex Cringle, Chief Product Officer"],
     },
     {
       date: "15 Jan 2025",
       time: "3:45 PM",
       imageAlt: "Talos",
-      imageSrc: "/workshops/Talos.png",
+      imageSrc: "./Talos.png",
       title: "Careers: Transitioning from Traditional Finance into the World of Digital Assets in Blockchain",
       company: "Talos",
       description: "Details to be announced",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdgbLcbIuHNNREqgPbmU__pX4k_-srfSZhBExnjG7ryb0dQXQ/viewform", // Talos link
-    }
-  ]
+      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdgbLcbIuHNNREqgPbmU__pX4k_-srfSZhBExnjG7ryb0dQXQ/viewform",
+      speakers: ["Pamela Lee, Head of Sales"],
+    },
+  ],
 };

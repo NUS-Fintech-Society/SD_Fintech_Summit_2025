@@ -16,13 +16,12 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   imageAlt = "Workshop Image",
   title,
   company,
-  secondImageSrc, 
-  registrationLink, // Registration link
+  secondImageSrc,
+  registrationLink,
+  speakers, // Single speaker
 }) => {
-  // State to track which image is displayed
   const [currentImage, setCurrentImage] = useState(imageSrc);
 
-  // Function to switch between the two images
   const toggleImage = () => {
     if (secondImageSrc) {
       setCurrentImage(currentImage === imageSrc ? secondImageSrc : imageSrc);
@@ -31,51 +30,67 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
 
   return (
     <div className="flex flex-col items-center justify-center space-y-3 w-full mt-12">
-    <div className="bg-white w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:justify-between space-y-4 lg:space-y-0 lg:space-x-6">
-      <div className="flex flex-col lg:flex-row items-center gap-4">
-        <div className="flex lg:mr-4 lg:ml-2 flex-row lg:flex-col">
-      <img
-        src={currentImage}
-        alt={imageAlt}
-        className="w-36 h-36 object-contain" // Significantly increased size
-      />
-      {secondImageSrc && <img
-        src={secondImageSrc}
-        alt={imageAlt}
-        className="w-36 h-36 object-contain" // Significantly increased size
-      />}
+      <div className="bg-white w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:justify-between space-y-4 lg:space-y-0 lg:space-x-6">
+        <div className="flex flex-col lg:flex-row items-center gap-4">
+          <div className="flex lg:mr-4 lg:ml-2 flex-row lg:flex-col">
+            <img
+              src={currentImage}
+              alt={imageAlt}
+              className="w-36 h-36 object-contain"
+            />
+            {secondImageSrc && (
+              <img
+                src={secondImageSrc}
+                alt={imageAlt}
+                className="w-36 h-36 object-contain"
+              />
+            )}
+          </div>
+          <div>
+            <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">{title}</h3>
+            <strong>{company}</strong>
+            <br />
+            <br />
+            <p>{description}</p>
+            <br />
+            <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
+            <p className="text-gray-700 font-bold">Time: {time}</p>
+            {/* Display Speaker */}
+            {speakers && (
+              <div className="mt-4">
+                <h4 className="text-lg font-semibold mb-2">Speakers:</h4>
+                <ul className="list-disc pl-5 text-gray-700">
+                  {speakers.map((speaker, index) => (
+                    <li key={index}>{speaker}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+            {/* Register Button */}
+            {registrationLink && (
+              <a href={registrationLink} target="_blank" rel="noopener noreferrer">
+                <button
+                  style={{
+                    width: 200,
+                    height: 60,
+                    backgroundColor: "#4470ba",
+                    color: "white",
+                    fontWeight: "600",
+                    borderRadius: "9999px",
+                    padding: "8px 16px",
+                    marginTop: "20px",
+                    marginBottom: "20px",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#365a96")}
+                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4470ba")}
+                >
+                  REGISTER
+                </button>
+              </a>
+            )}
+          </div>
+        </div>
       </div>
-      <div className="flex flex-col lg:w-10/12 items-center lg:items-start">
-        <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">{title}</h3>
-        <strong>{company}</strong><br />
-        <p className="text-justify">{description}</p> <br />
-        <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
-        <p className="text-gray-700 font-bold">Time: {time}</p>
-        {/* Register Button with more space */}
-        {registrationLink && (
-          <a href={registrationLink} target="_blank" rel="noopener noreferrer">
-            <button
-              style={{
-                width: 200,
-                height: 60,
-                backgroundColor: "#4470ba",
-                color: "white",
-                fontWeight: "600",
-                borderRadius: "9999px",
-                padding: "8px 16px",
-                marginTop: "20px",  // Added margin-top to add space above the button
-                marginBottom: "20px", // Added margin-bottom to add space below the button
-              }}
-              onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#365a96")}
-              onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4470ba")}
-            >
-              REGISTER
-            </button>
-          </a>
-        )}
-    </div>
-    </div>
-    </div>
     </div>
   );
 };

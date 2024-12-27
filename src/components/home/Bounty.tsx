@@ -63,6 +63,21 @@ const Bounty: React.FC = () => {
           ))}
         </div>
 
+       {/* Sign-up Link Section */}
+       <div className="mt-6 text-center">
+          <p className="text-[#FFA200] mb-4 text-lg">
+            To be considered for the track, sign up using this link:
+          </p>
+          <a
+            href="https://moledao.io/#/event/ad279f66-6cd8-47a6-9082-4ba9e40c3fa3"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            Sign Up Here
+          </a>
+        </div>
+
         {/* Button for more info */}
         <div className="mt-6 text-center">
           <a
