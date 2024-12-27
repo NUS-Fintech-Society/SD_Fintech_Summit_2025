@@ -8,4 +8,5 @@ export interface IWorkShop {
   company: string; // Company hosting the workshop
   description: string; // Description of the workshop or panel
   registrationLink?: string; // Link to the registration form (optional)
+  speakers?: string[];
 }
