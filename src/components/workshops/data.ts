@@ -35,7 +35,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       title: "State of Blockchain use cases in banks",
       company: "CitiBank",
       description: "Details to be announced",
-      registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSeb9hh7ZzZ5ZaECyadM-Vio_BW5vv3aE04YMd1TolVmbl0xAA/viewform",
+      registrationLink: "https://forms.gle/UYu5F6t5BniRXRqr8",
       speakers: ["Choo Haiping, Digital Assets"],
     },
   ],
@@ -63,4 +63,17 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       speakers: ["Pamela Lee, Head of Sales"],
     },
   ],
+  day4: [
+    {
+      date: "16 Jan 2025",
+      time: "5:00 PM",
+      imageAlt: "Talos",
+      imageSrc: "/workshops/RIMAS.png",
+      title: "AI for Humanity",
+      company: "RIMAS",
+      description: "Details to be announced",
+      registrationLink: "https://forms.gle/sGq2mXhU1BD6CKSV6",
+      speakers: ["Andeed Ma, Partner, AI International Institute (AIII) and President"],
+    },
+  ]
 };
