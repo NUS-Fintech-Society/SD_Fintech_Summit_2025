@@ -34,7 +34,8 @@ function getDayString(day: string): string {
   const dayMappings: Record<string, string> = {
     "day1": "13 Jan 2025",
     "day2": "14 Jan 2025",
-    "day3": "15 Jan 2025"
+    "day3": "15 Jan 2025",
+    "day4": "16 Jan 2025"
   };
   return dayMappings[day] || day;
 }
