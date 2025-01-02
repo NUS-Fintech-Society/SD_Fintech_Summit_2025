@@ -18,16 +18,10 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   company,
   secondImageSrc,
   registrationLink,
-  speakers,
-  disabled = false, // Default to false
+  speakers, // Single speaker
+  disabled,
 }) => {
   const [currentImage, setCurrentImage] = useState(imageSrc);
-
-  const toggleImage = () => {
-    if (secondImageSrc) {
-      setCurrentImage(currentImage === imageSrc ? secondImageSrc : imageSrc);
-    }
-  };
 
   return (
     <div className="flex flex-col items-center justify-center space-y-3 w-full mt-12">
@@ -39,11 +33,16 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
               alt={imageAlt}
               className="w-36 h-36 object-contain"
             />
+            {secondImageSrc && (
+              <img
+                src={secondImageSrc}
+                alt={imageAlt}
+                className="w-36 h-36 object-contain"
+              />
+            )}
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">
-              {title}
-            </h3>
+            <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">{title}</h3>
             <strong>{company}</strong>
             <br />
             <br />
@@ -51,6 +50,7 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
             <br />
             <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
             <p className="text-gray-700 font-bold">Time: {time}</p>
+            {/* Display Speaker */}
             {speakers && (
               <div className="mt-4">
                 <h4 className="text-lg font-semibold mb-2">Speakers:</h4>
@@ -61,6 +61,7 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
                 </ul>
               </div>
             )}
+            {/* Register Button */}
             {disabled ? (
               <button
                 style={{
@@ -73,7 +74,7 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
                   padding: "8px 16px",
                   marginTop: "20px",
                   marginBottom: "20px",
-                  cursor: "not-allowed", // Change cursor to indicate disabled
+                  cursor: "not-allowed", // Indicate non-clickable
                 }}
                 disabled
               >
@@ -90,7 +91,7 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
                     style={{
                       width: 200,
                       height: 60,
-                      backgroundColor: "#4470ba",
+                      backgroundColor: "#4470ba", // Blue background for active
                       color: "white",
                       fontWeight: "600",
                       borderRadius: "9999px",
