@@ -18,7 +18,8 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   company,
   secondImageSrc,
   registrationLink,
-  speakers, // Single speaker
+  speakers,
+  disabled = false, // Default to false
 }) => {
   const [currentImage, setCurrentImage] = useState(imageSrc);
 
@@ -29,7 +30,11 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
   };
 
   return (
-    <div className="flex flex-col items-center justify-center space-y-3 w-full mt-12">
+    <div
+      className={`flex flex-col items-center justify-center space-y-3 w-full mt-12 ${
+        disabled ? "opacity-50" : ""
+      }`}
+    >
       <div className="bg-white w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md flex flex-col lg:flex-row items-center lg:justify-between space-y-4 lg:space-y-0 lg:space-x-6">
         <div className="flex flex-col lg:flex-row items-center gap-4">
           <div className="flex lg:mr-4 lg:ml-2 flex-row lg:flex-col">
@@ -38,16 +43,11 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
               alt={imageAlt}
               className="w-36 h-36 object-contain"
             />
-            {secondImageSrc && (
-              <img
-                src={secondImageSrc}
-                alt={imageAlt}
-                className="w-36 h-36 object-contain"
-              />
-            )}
           </div>
           <div>
-            <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">{title}</h3>
+            <h3 className="text-2xl font-bold mb-2 text-center lg:text-left">
+              {title}
+            </h3>
             <strong>{company}</strong>
             <br />
             <br />
@@ -55,7 +55,6 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
             <br />
             <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
             <p className="text-gray-700 font-bold">Time: {time}</p>
-            {/* Display Speaker */}
             {speakers && (
               <div className="mt-4">
                 <h4 className="text-lg font-semibold mb-2">Speakers:</h4>
@@ -66,27 +65,52 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
                 </ul>
               </div>
             )}
-            {/* Register Button */}
-            {registrationLink && (
-              <a href={registrationLink} target="_blank" rel="noopener noreferrer">
-                <button
-                  style={{
-                    width: 200,
-                    height: 60,
-                    backgroundColor: "#4470ba",
-                    color: "white",
-                    fontWeight: "600",
-                    borderRadius: "9999px",
-                    padding: "8px 16px",
-                    marginTop: "20px",
-                    marginBottom: "20px",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#365a96")}
-                  onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#4470ba")}
+            {disabled ? (
+              <button
+                style={{
+                  width: 200,
+                  height: 60,
+                  backgroundColor: "#4470ba",
+                  color: "white",
+                  fontWeight: "600",
+                  borderRadius: "9999px",
+                  padding: "8px 16px",
+                  marginTop: "20px",
+                  marginBottom: "20px",
+                }}
+              >
+                CLOSED
+              </button>
+            ) : (
+              registrationLink && (
+                <a
+                  href={registrationLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  REGISTER
-                </button>
-              </a>
+                  <button
+                    style={{
+                      width: 200,
+                      height: 60,
+                      backgroundColor: "#4470ba",
+                      color: "white",
+                      fontWeight: "600",
+                      borderRadius: "9999px",
+                      padding: "8px 16px",
+                      marginTop: "20px",
+                      marginBottom: "20px",
+                    }}
+                    onMouseEnter={(e) =>
+                      (e.currentTarget.style.backgroundColor = "#365a96")
+                    }
+                    onMouseLeave={(e) =>
+                      (e.currentTarget.style.backgroundColor = "#4470ba")
+                    }
+                  >
+                    REGISTER
+                  </button>
+                </a>
+              )
             )}
           </div>
         </div>

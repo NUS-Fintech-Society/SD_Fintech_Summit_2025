@@ -12,6 +12,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Here is WEB 3: SUMMARISED, from DeFi protocols to Crypto to NFTs and everything in between, CONDENSED in a physical workshop!",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdNwHG5RAWMmyAO5AXEbPGSn0wUCqfAVRnWOp6rCeg0o7jErA/viewform",
       speakers: ["Jonas Chen, Co-Founder"],
+      disabled: true,
     },
     {
       date: "13 Jan 2025",
@@ -24,6 +25,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Learn to build AI-powered apps in mere hours!",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc1AJxMFKfvM1BGgF7WF9fS588SSsnfNnRMQRcSxNyc3oSIOA/viewform",
       speakers: ["Rachael Tan, Startup & Developer Growth Manager, APS", "Muhammad Usman, AI Integration Lead"],
+      disabled: false,
     },
   ],
   day2: [
@@ -37,6 +39,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Details to be announced",
       registrationLink: "https://forms.gle/UYu5F6t5BniRXRqr8",
       speakers: ["Choo Haiping, Digital Assets"],
+      disabled: false,
     },
   ],
   day3: [
@@ -50,6 +53,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Details to be announced",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdqqeBMqaq3l2nQA8sy2XgK5hkYdk3FTzBzwLCt8LydH-lsqA/viewform",
       speakers: ["Alex Cringle, Chief Product Officer"],
+      disabled: false,
     },
     {
       date: "15 Jan 2025",
@@ -61,6 +65,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Details to be announced",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdgbLcbIuHNNREqgPbmU__pX4k_-srfSZhBExnjG7ryb0dQXQ/viewform",
       speakers: ["Pamela Lee, Head of Sales"],
+      disabled: false,
     },
   ],
   day4: [
@@ -74,6 +79,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Details to be announced",
       registrationLink: "https://forms.gle/sGq2mXhU1BD6CKSV6",
       speakers: ["Andeed Ma, Partner, AI International Institute (AIII) and President"],
+      disabled: false,
     },
   ]
 };

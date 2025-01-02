@@ -9,4 +9,5 @@ export interface IWorkShop {
   description: string; // Description of the workshop or panel
   registrationLink?: string; // Link to the registration form (optional)
   speakers?: string[];
+  disabled?: boolean;
 }

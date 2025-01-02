@@ -22,6 +22,7 @@ const WorkshopList: React.FC<WorkshopListProps> = ({ workshops }) => {
           title={workshop.title}
           company={workshop.company}
           speakers={workshop.speakers}
+          disabled={workshop.disabled}
         />
       ))}
     </div>
