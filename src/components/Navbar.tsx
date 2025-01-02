@@ -281,6 +281,12 @@ const Navbar: React.FC = () => {
                   >
                     15 Jan 2025
                   </Link>
+                  <Link
+                    href="/workshops/day4"
+                    onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
+                  >
+                    16 Jan 2025
+                  </Link>
                 </div>
               </div>
             </div>
