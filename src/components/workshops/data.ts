@@ -25,7 +25,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "Learn to build AI-powered apps in mere hours!",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSc1AJxMFKfvM1BGgF7WF9fS588SSsnfNnRMQRcSxNyc3oSIOA/viewform",
       speakers: ["Rachael Tan, Startup & Developer Growth Manager, APS", "Muhammad Usman, AI Integration Lead"],
-      disabled: false,
+      disabled: true,
     },
   ],
   day2: [
