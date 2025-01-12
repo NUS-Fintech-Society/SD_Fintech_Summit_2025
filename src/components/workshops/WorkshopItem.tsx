@@ -46,8 +46,7 @@ const WorkshopItem: React.FC<WorkshopItemProps> = ({
             <strong>{company}</strong>
             <br />
             <br />
-            <p>{description}</p>
-            <br />
+            {description && (<div><p>{description}</p><br /></div>)}
             <p className="text-gray-700 font-bold mb-2 sm:mb-0">Date: {date}</p>
             <p className="text-gray-700 font-bold">Time: {time}</p>
             {/* Display Speaker */}
