@@ -79,7 +79,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "",
       registrationLink: "https://forms.gle/sGq2mXhU1BD6CKSV6",
       speakers: ["Andeed Ma, Partner, AI International Institute (AIII) and President"],
-      disabled: false,
+      disabled: true,
     },
   ]
 };
