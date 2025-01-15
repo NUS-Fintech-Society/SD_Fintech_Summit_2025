@@ -39,7 +39,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "",
       registrationLink: "https://forms.gle/UYu5F6t5BniRXRqr8",
       speakers: ["Choo Haiping, Digital Assets"],
-      disabled: false,
+      disabled: true,
     },
   ],
   day3: [
@@ -53,7 +53,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdqqeBMqaq3l2nQA8sy2XgK5hkYdk3FTzBzwLCt8LydH-lsqA/viewform",
       speakers: ["Alex Cringle, Chief Product Officer"],
-      disabled: false,
+      disabled: true,
     },
     {
       date: "15 Jan 2025",
@@ -65,7 +65,7 @@ export const workshopsMockData: Record<string, IWorkShop[]> = {
       description: "",
       registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSdgbLcbIuHNNREqgPbmU__pX4k_-srfSZhBExnjG7ryb0dQXQ/viewform",
       speakers: ["Pamela Lee, Head of Sales"],
-      disabled: false,
+      disabled: true,
     },
   ],
   day4: [
