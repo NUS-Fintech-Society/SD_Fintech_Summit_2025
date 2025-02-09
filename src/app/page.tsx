@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
   return (
     <div className="bg-custom-background min-h-screen">
       <div className="container mx-auto p-8">
-        <Banner />
+        {/* <Banner /> */}
         <Header />
         <div id="problem-statement" />
         <ProblemStatement />
