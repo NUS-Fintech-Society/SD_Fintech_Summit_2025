@@ -33,7 +33,6 @@ For example:
 
 ---
 
-## Key Routing Folders
 ### Hackathon Registration
 - **File Path:** `src/app/api/hackathon/registration/route.ts`
 - **Endpoint:** `POST /api/hackathon/registration`
@@ -42,7 +41,7 @@ For example:
 ---
 
 ### Hackathon Submission
-src/app/api/hackathon/submission/route.ts`
+- **File Path:** `src/app/api/hackathon/submission/route.ts`
 - **Endpoint:** `POST /api/hackathon/submission`
 - **Description:** Allows **only registered team leaders** to submit their hackathon project.
 
