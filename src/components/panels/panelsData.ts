@@ -4,17 +4,18 @@ import { IPanels } from './types'; // Make sure the path to types.ts is correct
 export const panelsMockData: Record<string, IPanels[]> = {
   day1: [
     {
-      date: "2025-01-13",
-      time: "10:00 AM",
-      topic: "Navigating the volatile markets",  // The new topic field
-      description: "How can venture firms and market participants mitigate risks from scams, vapourware, and everything in between.",  // The new description field
-      speakers: ["Ripple", "Taisu", "Coinbase"],
+      date: "9 Jan 2026",
+      time: "11:00AM - 11:30AM",
+      venue: "NUS School of Computing (COM3)",
+      topic: "Stablecoins as Global Commerce's New Engine",  // The new topic field
+      description: "",  // The new description field
+      moderators: ["Prof Hahn Jungpil - Director, NUS Fintech Lab"],
+      speakers: ["Tommy Ching - Head of Client Solution, APAC (Ripple)", "CJ Fong - General Manager of APAC (GSR)"],
       speakerImages: [
-        "./Ripple.png",  // Ripple speaker image
-        "./Taisu.png",   // Taisu speaker image
-        "./Coinbase.png", // Coinbase speaker image
+        "/panel/Ripple.png",  // Ripple speaker image
+        "/panel/GSR.png",   // GSR speaker image
       ],
-      imageAlt: "Navigating Volatile Markets Panel",
+      imageAlt: "Stablecoins as Global Commerce's New Engine",
     },
   ],
 };

@@ -36,7 +36,7 @@ const Header: React.FC = () => {
       `,
             }}
           >
-            2025
+            2026
           </span>
         </h1>
 
@@ -45,7 +45,7 @@ const Header: React.FC = () => {
         <Countdown />
 
         <p className="text-md md:text-lg font-semibold text-[#BBC49A] text-center mb-8">
-          6th - 17th January 2025 @ National University of Singapore
+          5th - 9th January 2026 @ National University of Singapore
         </p>
       </div>
     </div>

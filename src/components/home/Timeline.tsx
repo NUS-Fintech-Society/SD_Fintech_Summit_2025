@@ -11,52 +11,47 @@ type TimelineItemType = {
 
 const timelineItems: TimelineItemType[] = [
   {
-    title: "Hackathon Starts",
-    description:
-      "Hackathon Problem Statement Announcement",
-    date: "15 DEC 2024",
-    link: "/",
-  },
-  {
-    title: "Hackathon Registration Deadline",
-    description:
-      "",
-    date: "05 JAN 2025",
-    link: "/",
-  },
-  {
-    title: "Opening Ceremony (Physical)",
-    description:
-      "• Problem Statement Discussion \n • Introduce the summit \n • Panel Discussion",
-    date: "06 JAN 2025",
-  },
-  {
-    title: "Hackathon Submissions Deadline",
-    description:
-      "",
-    date: "10 JAN 2025",
-    link: "/",
-  },
-  {
-    title: "Physical Workshops",
-    description:
-      "",
-    date: "13 JAN 2025",
-    link: "/",
+    title: "Registration Period",
+    description: "Open for both individual and team sign-ups.",
+    date: "15 DEC 2025 - 01 JAN 2026",
   },
   {
     title: "Online Workshops",
-    description:
-      "",
-    date: "14 - 16 JAN 2025",
+    description: "Technical, product, and FinTech-related (open to all).",
+    date: "05-06 JAN 2026",
   },
   {
-    title: "Physical Demo Day",
-    description:
-      "",
-    date: "17 JAN 2025",
+    title: "Opening Day",
+    description: "Problem statements release & Opening Ceremony (Physical, COM3 MPH).",
+    date: "07 JAN 2026",
+  },
+  {
+    title: "Hackathon",
+    description: "Ideation and prototyping.",
+    date: "07-09 JAN 2026",
+  },
+  {
+    title: "Submission Deadline",
+    description: "Final project submissions (morning).",
+    date: "09 JAN 2026 (Morning)",
+  },
+  {
+    title: "Panel Discussions",
+    description: "FinTech and product talks (open to all participants).",
+    date: "09 JAN 2026 (Midday)",
+  },
+  {
+    title: "Career Booth Fest + Finalist Demo Day",
+    description: "Company booths and finalist demos (Physical, COM3 MPH).",
+    date: "09 JAN 2026 (Afternoon)",
+  },
+  {
+    title: "Awards Ceremony & Networking",
+    description: "Prize presentation, networking, and afterparty.",
+    date: "09 JAN 2026 (Evening)",
   },
 ];
+
 
 const Timeline = () => {
   const [isVisible, setIsVisible] = useState(true);

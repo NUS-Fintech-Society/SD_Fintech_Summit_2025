@@ -11,7 +11,7 @@ const Banner: React.FC = () => {
         <div className="flex items-center gap-4">
           <p>🚀 Hackathon registration has opened!</p>
           <a
-            href="https://forms.gle/HcVEtSDBVZikaqHY9"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSebdk8QY2Yud2X0QPlPVHq3soGeGMprGCNAceTLfevUz632dw/viewform?usp=header"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-[#0B2858] text-white px-4 py-2 rounded-lg hover:bg-[#072047] transition duration-200"

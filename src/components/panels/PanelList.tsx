@@ -14,8 +14,11 @@ const PanelList: React.FC<PanelListProps> = ({ panels }) => {
           key={index}
           date={panel.date}
           time={panel.time}
+          venue={panel.venue}
           topic={panel.topic} // Pass the topic here
           description={panel.description} // Pass the description here
+          moderators={panel.moderators}
+          speakers={panel.speakers}
           speakerImages={panel.speakerImages}
           imageAlt={panel.imageAlt}
         />

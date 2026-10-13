@@ -22,20 +22,25 @@ export default async function Page({ params }: { params: { day: string } }) {
       {/* Workshops Section */}
       <h2 className="text-xl text-center text-white font-semibold mb-4">
         <div className="[text-shadow:_4px_3px_0px_#000000] text-3xl">
-          {day == "day1" ? "PHYSICAL WORKSHOPS" : "VIRTUAL WORKSHOPS"} {/* Show the dynamic workshop type */}
+          {"ONLINE WORKSHOPS"} {/* Show the dynamic workshop type */}
         </div>
       </h2>
       <WorkshopList workshops={workshops} />
     </div>
   );
+  // return ( //TODO: change back when workshop data is set
+  //   <div className="bg-custom-background min-h-screen p-8 flex items-center justify-center">
+  //     <h1 className="text-4xl text-white font-bold [text-shadow:_4px_3px_0px_#000000]">
+  //       To be released
+  //     </h1>
+  //   </div>
+  // );
 }
 
 function getDayString(day: string): string {
   const dayMappings: Record<string, string> = {
-    "day1": "13 Jan 2025",
-    "day2": "14 Jan 2025",
-    "day3": "15 Jan 2025",
-    "day4": "16 Jan 2025"
+    "day1": "5 Jan 2026",
+    "day2": "6 Jan 2026",
   };
   return dayMappings[day] || day;
 }

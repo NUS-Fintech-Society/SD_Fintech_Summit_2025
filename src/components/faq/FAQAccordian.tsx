@@ -67,17 +67,17 @@ export const mockData: Record<
     {
       question: "Who is eligible to take part in the hackathon?",
       answer:
-        "NUS Fintech Summit 2025 is open to all tertiary students across the globe.",
+        "NUS Fintech Summit 2026 is open to all tertiary students across the globe.",
     },
     {
       question: "Are there any requirements for the hackathon team formation?",
       answer:
-        "The team should consist of 1-5 members from any tertiary institute. Please appoint a Team Lead to be the main point of contact throughout the hackathon.",
+        "The team should consist of 3-5 members from any tertiary institute. Please appoint a Team Lead to be the main point of contact throughout the hackathon.",
     },
     {
       question: "How do we sign up for the hackathon?",
       answer:
-        "Sign-ups will be made available on 12th December 2024. Each team should only sign up once and appoint a team lead. If any changes arise, please email our team at nusfintech.ops@gmail.com.",
+        "Registration for the NUS Fintech Summit 2026 hackathon opens from 15–31 December 2025. You may sign up individually or as a team using the registration link provided on our official channels.",
     },
     {
       question: "Will the hackathon be conducted remotely?",
@@ -86,12 +86,12 @@ export const mockData: Record<
     },
     {
       question: "Where do we submit our files for the hackathon?",
-      answer: "You may submit your files via our devpost. (https://nus-fintech-summit-2025.devpost.com/)",
+      answer: "You may submit your files via our devpost. (https://nus-fintech-summit-2026.devpost.com/)", //TODO update devpost
     },
     {
       question: "What is the judging criteria and submission requirements?",
       answer:
-        "You may refer to our devpost. (https://nus-fintech-summit-2025.devpost.com/)",
+        "You may refer to our devpost. (https://nus-fintech-summit-2026.devpost.com/)", //TODO update devpost
     },
     {
       question: "What does it cost?",
@@ -110,7 +110,8 @@ export const mockData: Record<
     },
     {
       question: "Can I attend the workshop virtually?",
-      answer: "Workshops held on 13th January 2025 are physical. Workshops held on 14th - 15th January 2025 are virtual.",
+      answer:
+        "Workshops on 5 and 6 January 2026 will be held fully in person at NUS COM3 MPH. Virtual attendance is not available.",
     },
     {
       question: "Are the workshops compulsory for hackathon participants?",
@@ -136,9 +137,9 @@ export const mockData: Record<
     },
     {
       question:
-        "Must all hackathon participants be physically present at the venue?",
+        "Must all hackathon finalists be physically present at the venue?",
       answer:
-        "All hackathon finalists are required to be physically present to present their projecsts. If there are any difficulties, especially for international participants, do kindly let us know by emailing nusfintech.ops@gmail.com",
+        "Yes, all finalist teams must be physically present on 9 January 2026 for Final Demo Day presentations.",
     },
   ],
   afterEventParty: [

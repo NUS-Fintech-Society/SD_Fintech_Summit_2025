@@ -10,10 +10,10 @@ interface Challenge {
 
 const challenges: Challenge[] = [
   { title: 'Security and Transparency', description: 'Enhance the transparency, traceability, and security of business operations using blockchain technology.' },
-  { title: 'Life and Health', description: 'Promote healthy living for everyone using blockchain technology.' },
-  { title: 'Sustainable Development', description: 'Promote sustainable development, including the use of clean energy, addressing environmental issues, and achieving economic sustainable growth.' },
-  { title: 'Global Education Development', description: 'Promote inclusive and equitable quality education, ensuring lifelong learning opportunities for all.' },
-  { title: 'Reducing Inequality', description: 'Reduce disparities in resource distribution within and among countries, addressing issues of inequality in the traditional world.' },
+  { title: 'Life and Health', description: 'Promote healthy living and equitable healthcare using blockchain technology.' },
+  { title: 'Sustainable Development', description: 'Address environmental challenges, promote clean energy, and achieve economic sustainability.' },
+  { title: 'Global Education Development', description: 'Advance equitable access to quality education for all.' },
+  { title: 'Reducing Inequality', description: 'Tackle resource disparities and promote inclusivity.' },
 ];
 
 const Bounty: React.FC = () => {
@@ -26,6 +26,57 @@ const Bounty: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center p-4 mt-4 mb-4">
       <CircleCapsuleBanner title="Bounty" />
+      <div className="bg-[#0B2858] text-[#FFA200] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md">
+          <div className="flex flex-col lg:flex-row items-center lg:items-center space-y-4 lg:space-y-0 lg:space-x-6">
+          <img
+            src="/sponsors/Ripple.png" 
+            alt="Ripple Logo"
+            className="w-36 h-36 object-contain" // Significantly increased size
+          />
+          <div>
+          <h2 className="text-2xl font-bold mb-4 text-center lg:text-left text-[#FFA200]">Ripple Track</h2>
+            <p className="text-justify text-[#FFA200] mb-4">
+            Ripple is offering a bounty for the best feedback related to the developer experience during the hackathon.
+            The goal of this bounty is to gather valuable insights to improve the XRPL developer journey.
+
+            </p>
+          </div>
+        </div>
+
+        <div className='text-l font-bold text-center'>
+          <p>Award: 1-2 bounties of  <span className="text-[#CDA538] font-bold">500 SGD</span> each</p>
+        </div>
+
+        {/* Sign-up Link Section */}
+        <div className="mt-6 text-center">
+          <p className="text-[#FFA200] mb-4 text-lg">
+            To be considered for the track, fill in this form:
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSelUaPFyBfO1g0Dgqo2DfSNhJxRbza7qdDwJIM15F29YoZgjQ/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            Fill In Here
+          </a>
+        </div>
+
+        {/* Button for more info */}
+        <div className="mt-6 text-center">
+          <a
+            href="https://docs.google.com/document/d/1EmOWPZSmhD9ndO26sQoJl4tpmarIp4uryeZ_iCI1wBM/edit?tab=t.614d4b9jtc1c"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
+          >
+            Click here for more
+          </a>
+        </div>
+      </div>
+
+      <br></br>
+
       <div className="bg-[#0B2858] text-[#FFA200] w-full sm:w-10/12 lg:w-9/12 min-h-28 rounded-md p-4 text-lg leading-relaxed text-[#0B2858] shadow-md">
           <div className="flex flex-col lg:flex-row items-center lg:items-center space-y-4 lg:space-y-0 lg:space-x-6">
           <img
@@ -63,25 +114,27 @@ const Bounty: React.FC = () => {
           ))}
         </div>
 
-       {/* Sign-up Link Section */}
-       <div className="mt-6 text-center">
+        <br></br>
+
+        <div className='text-l font-bold text-center'>
+          <p>Award: <span className="text-[#CDA538] font-bold">2000 USDT</span> Prize Pool</p>
+        </div>
+
+
+        {/* Sign-up Link Section */}
+        <div className="mt-6 text-justify">
           <p className="text-[#FFA200] mb-4 text-lg">
-            To be considered for the track, sign up using this link:
+          To be considered for the BGA Bounty, come to the BGA booth on demo day to pitch your ideas and projects to the judge live.
+          Each presentation should be no longer than 2.5 minutes.
+          There may be questions posed by the judge after your pitch.
+          Virtual presentations will be permitted on a case-by-case basis and participants should let us know at least one day prior.
           </p>
-          <a
-            href="https://moledao.io/#/event/ad279f66-6cd8-47a6-9082-4ba9e40c3fa3"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
-          >
-            Sign Up Here
-          </a>
         </div>
 
         {/* Button for more info */}
         <div className="mt-6 text-center">
           <a
-            href="https://docs.google.com/document/d/1GI_Ku9lhANsJ43DnesVp2xxaZ5hXf-NzshEiVlw3feI/edit"
+            href="https://docs.google.com/document/d/1EmOWPZSmhD9ndO26sQoJl4tpmarIp4uryeZ_iCI1wBM/edit?tab=t.95bqyn7ldi3q"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block px-6 py-2 bg-[#FFA200] text-[#0B2858] font-semibold rounded-lg hover:bg-[#cc8400]"
@@ -90,7 +143,7 @@ const Bounty: React.FC = () => {
           </a>
         </div>
       </div>
-      </div>
+    </div>
   );
 };
 

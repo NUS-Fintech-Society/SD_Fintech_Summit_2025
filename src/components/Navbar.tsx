@@ -102,13 +102,15 @@ const Navbar: React.FC = () => {
             </button>
             {isDropdownOpen === "workshops" && (
               <div className="absolute left-0 top-full mt-1 w-40 bg-blue-400 text-white rounded-lg shadow-lg z-50">
-                <Link href="/workshops/day1" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>13 Jan 2025</Link>
-                <Link href="/workshops/day2" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>14 Jan 2025</Link>
-                <Link href="/workshops/day3" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>15 Jan 2025</Link>
-                <Link href="/workshops/day4" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>16 Jan 2025</Link>
+                <Link href="/workshops/day1" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>5 Jan 2026</Link>
+                <Link href="/workshops/day2" className="block px-4 py-2 hover:bg-nav-backround rounded-lg" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>6 Jan 2026</Link>
               </div>
             )}
           </div>
+
+          <Link href="/panel" className="hidden lg:block text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
+            PANEL DISCUSSION
+          </Link>
 
           <Link href="/sponsors" className="hidden lg:block text-white font-bold text-lg hover:text-gray-200" style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}>
             SPONSORS
@@ -123,7 +125,7 @@ const Navbar: React.FC = () => {
           </Link>
 
           <Link 
-            href="https://forms.gle/HcVEtSDBVZikaqHY9"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSebdk8QY2Yud2X0QPlPVHq3soGeGMprGCNAceTLfevUz632dw/viewform"
             target="_blank"
             className="hidden lg:block text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200"
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
@@ -267,29 +269,22 @@ const Navbar: React.FC = () => {
                     href="/workshops/day1"
                     onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                   >
-                    13 Jan 2025
+                    5 Jan 2026
                   </Link>
                   <Link
                     href="/workshops/day2"
                     onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
                   >
-                    14 Jan 2025
-                  </Link>
-                  <Link
-                    href="/workshops/day3"
-                    onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
-                  >
-                    15 Jan 2025
-                  </Link>
-                  <Link
-                    href="/workshops/day4"
-                    onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:bg-nav-backround hover:text-gray-200"
-                  >
-                    16 Jan 2025
+                    6 Jan 2026
                   </Link>
                 </div>
               </div>
             </div>
+
+            <Link href="/panel" 
+            onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
+              PANEL DISCUSSION
+            </Link>
 
             <Link href="/sponsors" 
             onClick={() => setIsMenuOpen(false)} className="block px-4 py-2 hover:text-gray-200">
@@ -307,7 +302,7 @@ const Navbar: React.FC = () => {
             </Link>
 
             <Link 
-              href="https://docs.google.com/forms/d/e/1FAIpQLSd39bxGCe-lOdfiNURKSpNqzjzzRg-yy-OI87hCOLHimiofSg/closedform"
+              href="https://docs.google.com/forms/d/e/1FAIpQLSebdk8QY2Yud2X0QPlPVHq3soGeGMprGCNAceTLfevUz632dw/viewform?usp=header"
               className="text-white font-bold text-lg px-4 py-2 border border-white rounded-full hover:bg-white hover:text-nav-backround transition-colors duration-200 ml-2"
               style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 0.3)" }}
             >
